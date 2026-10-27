@@ -44,8 +44,8 @@ cells = [
     nbf.v4.new_code_cell(
         "bg = lv.dropna(subset=['gaji_max_jt'])\n"
         "print(f'{len(bg)}/{len(lv)} lowongan bergaji')\n"
-        "bg.groupby('role_family').gaji_max_jt.median().sort_values()\n"
-        "  .plot.barh(figsize=(8,4), color='#16A34A')\n"
+        "(bg.groupby('role_family').gaji_max_jt.median().sort_values()\n"
+        "   .plot.barh(figsize=(8,4), color='#16A34A'))\n"
         "plt.xlabel('Median gaji max (Rp jt/bln)'); plt.show()"),
     nbf.v4.new_markdown_cell(
         "## Insight utama\n"
