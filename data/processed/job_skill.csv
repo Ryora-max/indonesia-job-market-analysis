@@ -1,0 +1,417 @@
+id_lowongan,skill
+kb_271238,Statistik
+kb_271238,Storytelling / Presentasi
+kb_272359,SQL
+kb_272359,Python
+kb_272359,Google Sheets
+kb_272359,Looker / Data Studio
+kb_272359,BigQuery
+kb_272359,Cloud (AWS/GCP/Azure)
+kb_272359,Airflow / Orchestrasi
+kb_272359,ETL / Data Pipeline
+kb_272359,Visualisasi Data
+kb_272359,Git
+kb_207492,SQL
+kb_207492,Python
+kb_207492,Power BI
+kb_207492,Tableau
+kb_207492,Looker / Data Studio
+kb_207492,Cloud (AWS/GCP/Azure)
+kb_207492,Statistik
+kb_270033,SQL
+kb_270033,Excel
+kb_270033,Google Sheets
+kb_270033,Power BI
+kb_270033,Tableau
+kb_270033,Looker / Data Studio
+kb_270033,Statistik
+kb_270033,Visualisasi Data
+kb_267421,SQL
+kb_267421,Python
+kb_267421,Statistik
+kb_272093,Excel
+kb_272093,Google Sheets
+kb_272093,Looker / Data Studio
+kb_272093,Statistik
+kb_272093,Visualisasi Data
+kb_272709,SQL
+kb_272709,Excel
+kb_272709,Storytelling / Presentasi
+kb_272641,SQL
+kb_272641,Python
+kb_272641,ETL / Data Pipeline
+kb_272641,Statistik
+kb_269280,Python
+kb_269280,Spark / Hadoop
+kb_269280,NoSQL / MongoDB
+kb_274418,SQL
+kb_274418,Excel
+kb_274418,Google Sheets
+kb_274418,Power BI
+kb_274418,Tableau
+kb_274418,Looker / Data Studio
+kb_274418,Statistik
+kb_274418,Visualisasi Data
+kb_262072,SQL
+kb_262072,Python
+kb_262072,Cloud (AWS/GCP/Azure)
+kb_262072,Airflow / Orchestrasi
+kb_262072,ETL / Data Pipeline
+kb_262072,dbt
+kb_272950,SQL
+kb_272950,Python
+kb_272950,Cloud (AWS/GCP/Azure)
+kb_272950,ETL / Data Pipeline
+kb_273252,Python
+kb_273252,Cloud (AWS/GCP/Azure)
+kb_273252,Statistik
+kb_273252,Machine Learning
+kb_273252,SPSS / SAS
+kb_273081,Excel
+kb_273081,Google Sheets
+kb_270000,SQL
+kb_270000,Python
+kb_270000,Cloud (AWS/GCP/Azure)
+kb_270000,Spark / Hadoop
+kb_268320,Excel
+kb_268320,Visualisasi Data
+kb_273274,SQL
+kb_273274,Cloud (AWS/GCP/Azure)
+kb_273274,Spark / Hadoop
+kb_273274,ETL / Data Pipeline
+kb_273274,Statistik
+kb_273274,Storytelling / Presentasi
+kb_273274,JIRA / Agile
+kb_273274,NoSQL / MongoDB
+kb_273243,SQL
+kb_273243,Python
+kb_273243,ETL / Data Pipeline
+kb_273243,Visualisasi Data
+kb_272823,SQL
+kb_272823,Python
+kb_272823,Airflow / Orchestrasi
+kb_272823,ETL / Data Pipeline
+kb_270457,Excel
+kb_270457,Statistik
+kb_270457,ERP / SAP
+kb_247558,JIRA / Agile
+kb_273121,Excel
+kb_273121,Storytelling / Presentasi
+kb_166479,JIRA / Agile
+kb_223091,Storytelling / Presentasi
+kb_223091,JIRA / Agile
+kb_273215,SQL
+kb_197705,Storytelling / Presentasi
+kb_197705,JIRA / Agile
+kb_274163,Storytelling / Presentasi
+kb_274008,JIRA / Agile
+kb_274143,Storytelling / Presentasi
+kb_274143,JIRA / Agile
+kb_274451,JIRA / Agile
+kb_270025,Statistik
+kb_263891,SQL
+kb_263891,JIRA / Agile
+kb_271398,SQL
+kb_271398,Excel
+kb_270651,Excel
+kb_270651,Power BI
+kb_270651,Tableau
+kb_270651,Looker / Data Studio
+kb_270651,Statistik
+kb_270651,Visualisasi Data
+kb_254186,JIRA / Agile
+kb_251130,Excel
+kb_273938,Python
+kb_273938,ERP / SAP
+kb_271997,Storytelling / Presentasi
+kb_274099,Excel
+kb_274099,Google Sheets
+kb_272261,Excel
+kb_272261,Google Sheets
+kb_272261,Visualisasi Data
+kb_259857,Excel
+kb_259857,Storytelling / Presentasi
+kb_271552,SQL
+kb_271552,Excel
+kb_271552,JIRA / Agile
+kb_271839,Statistik
+kb_271839,Machine Learning
+kb_269492,SQL
+kb_269492,Excel
+kb_269492,JIRA / Agile
+kb_274004,SQL
+kb_274004,ETL / Data Pipeline
+kb_274448,SQL
+kb_274448,Python
+kb_274448,Excel
+kb_274448,Power BI
+kb_274448,Tableau
+kb_274448,ETL / Data Pipeline
+kb_274448,Statistik
+kb_274448,Machine Learning
+kb_274448,Visualisasi Data
+kb_262223,Statistik
+kb_270546,Excel
+kb_166784,Storytelling / Presentasi
+kb_270488,SQL
+kb_270488,Excel
+kb_270488,Google Sheets
+kb_270488,Power BI
+kb_270488,Statistik
+kb_270488,Visualisasi Data
+kb_270488,Storytelling / Presentasi
+kb_272250,SQL
+kb_272250,ETL / Data Pipeline
+kb_272249,Excel
+kb_272249,Statistik
+kb_272812,Python
+kb_272812,Power BI
+kb_272812,Tableau
+kb_272812,Looker / Data Studio
+kb_272812,Statistik
+kb_272812,Visualisasi Data
+kb_272812,Storytelling / Presentasi
+kb_274798,Excel
+kb_274798,Visualisasi Data
+kb_272948,SQL
+kb_272948,Excel
+kb_272948,Google Sheets
+kb_272948,Storytelling / Presentasi
+kb_273180,SQL
+kb_273180,Python
+kb_273180,Cloud (AWS/GCP/Azure)
+kb_273180,ETL / Data Pipeline
+kb_273180,JIRA / Agile
+kb_273180,NoSQL / MongoDB
+kb_273949,Python
+kb_273949,Cloud (AWS/GCP/Azure)
+kb_273949,Statistik
+kb_273949,Machine Learning
+kb_269952,SQL
+kb_269952,Excel
+kb_269952,Power BI
+kb_269952,Looker / Data Studio
+kb_269952,Statistik
+kb_269952,Visualisasi Data
+kb_269952,Storytelling / Presentasi
+kb_273902,SQL
+kb_273902,Python
+kb_273902,Airflow / Orchestrasi
+kb_273902,ETL / Data Pipeline
+kb_274524,SQL
+kb_274524,Python
+kb_274524,Excel
+kb_274524,Visualisasi Data
+kb_273402,SQL
+kb_273402,Excel
+kb_273402,Google Sheets
+kb_273403,Excel
+kb_273403,Google Sheets
+kb_269965,Excel
+kb_269965,Statistik
+kb_269965,Storytelling / Presentasi
+kb_271935,SQL
+kb_271935,Python
+kb_271935,Excel
+kb_271935,Statistik
+kb_271935,Machine Learning
+kb_274013,Statistik
+kb_274013,Visualisasi Data
+kb_273200,SQL
+kb_273200,Excel
+kb_273200,Google Sheets
+kb_273200,Visualisasi Data
+kb_273200,JIRA / Agile
+kb_271604,SQL
+kb_271604,Excel
+kb_271604,Power BI
+kb_271604,Looker / Data Studio
+kb_271604,Statistik
+kb_271604,Visualisasi Data
+kb_271604,Storytelling / Presentasi
+kb_273211,SQL
+kb_273211,Python
+kb_273211,ERP / SAP
+kb_274820,Excel
+kb_274820,Visualisasi Data
+kb_274820,Storytelling / Presentasi
+kb_272271,SQL
+kb_272271,ETL / Data Pipeline
+kb_272271,Git
+kb_272271,JIRA / Agile
+kb_272814,SQL
+kb_272814,Power BI
+kb_272814,Tableau
+kb_272814,Looker / Data Studio
+kb_272814,Statistik
+kb_272615,SQL
+kb_272615,Excel
+kb_272615,Looker / Data Studio
+kb_272615,JIRA / Agile
+kb_274525,SQL
+kb_274525,Tableau
+kb_274525,Statistik
+kb_274525,Machine Learning
+kb_274525,Storytelling / Presentasi
+kb_274525,JIRA / Agile
+kb_274525,NoSQL / MongoDB
+kb_273690,Excel
+kb_273690,Google Sheets
+kb_273690,JIRA / Agile
+kb_263345,Excel
+kb_263345,Statistik
+kb_272435,SQL
+kb_272435,Excel
+kb_272435,Google Sheets
+kb_248854,SQL
+kb_248854,Excel
+kb_248854,Power BI
+kb_248854,Tableau
+kb_248854,Looker / Data Studio
+kb_248854,Visualisasi Data
+kb_248854,Storytelling / Presentasi
+kb_273084,Excel
+kb_273084,Google Sheets
+kb_273401,Excel
+kb_273401,Google Sheets
+kb_272582,Excel
+kb_272582,Google Sheets
+kb_272582,Storytelling / Presentasi
+kb_273965,Excel
+kb_273965,Google Sheets
+kb_273965,Statistik
+kb_262843,SQL
+kb_262843,Python
+kb_262843,JIRA / Agile
+kb_274802,Excel
+kb_274802,Google Sheets
+kb_274802,Storytelling / Presentasi
+kb_274669,Excel
+kb_274669,Google Sheets
+kb_269412,SQL
+kb_269412,Excel
+kb_269412,Visualisasi Data
+kb_269412,ERP / SAP
+kb_273009,Google Sheets
+kb_273009,Looker / Data Studio
+kb_273009,Statistik
+kb_273009,Visualisasi Data
+kb_273083,Excel
+kb_273083,Google Sheets
+kb_273083,JIRA / Agile
+kb_271196,Excel
+kb_271196,Google Sheets
+kb_271112,Excel
+kb_271112,Visualisasi Data
+kb_270395,SQL
+kb_270395,Python
+kb_270395,Cloud (AWS/GCP/Azure)
+kb_270395,Statistik
+kb_270395,Git
+kb_270395,JIRA / Agile
+kb_270395,ERP / SAP
+kb_273739,Excel
+kb_273739,Google Sheets
+kb_273739,Storytelling / Presentasi
+kb_272711,Excel
+kb_272711,Google Sheets
+kb_268874,SQL
+kb_268874,Excel
+kb_268874,JIRA / Agile
+kb_274162,Excel
+kb_274162,Google Sheets
+kb_274162,Visualisasi Data
+kb_274162,Storytelling / Presentasi
+kb_274649,Excel
+kb_274649,Google Sheets
+kb_274649,Visualisasi Data
+kb_273696,SQL
+kb_273696,Python
+kb_273696,JIRA / Agile
+kb_273696,NoSQL / MongoDB
+kb_262972,SQL
+kb_262972,Python
+kb_262972,JIRA / Agile
+kb_262972,NoSQL / MongoDB
+kb_274653,Excel
+kb_274653,Google Sheets
+kb_274653,Visualisasi Data
+kb_272987,Excel
+kb_272987,Google Sheets
+kb_272987,Storytelling / Presentasi
+kb_272987,ERP / SAP
+kb_272420,Excel
+kb_272420,Google Sheets
+kb_272420,ERP / SAP
+kb_272506,SQL
+kb_272506,Excel
+kb_272506,Storytelling / Presentasi
+kb_272506,JIRA / Agile
+kb_274018,Excel
+kb_274018,Google Sheets
+kb_274018,Storytelling / Presentasi
+kb_264125,Excel
+kb_264125,Google Sheets
+kb_272629,SQL
+kb_272629,Excel
+kb_272629,Storytelling / Presentasi
+kb_274685,Excel
+kb_274685,Google Sheets
+kb_272936,Excel
+kb_272936,Visualisasi Data
+kb_272936,Storytelling / Presentasi
+kb_274765,Excel
+kb_274765,Google Sheets
+kb_272573,Excel
+kb_272573,Google Sheets
+kb_272573,ERP / SAP
+kb_246621,SQL
+kb_246621,Power BI
+kb_246621,Visualisasi Data
+kb_274130,Excel
+kb_274130,Google Sheets
+kb_265250,Excel
+kb_265250,Google Sheets
+kb_272819,SQL
+kb_272819,Excel
+kb_272819,Google Sheets
+kb_272819,Statistik
+kb_274124,Excel
+kb_274124,Google Sheets
+kb_244907,Excel
+kb_244907,Google Sheets
+kb_244907,Storytelling / Presentasi
+kb_274863,Excel
+kb_274863,Statistik
+kb_274863,Storytelling / Presentasi
+kb_274345,Excel
+kb_274345,Google Sheets
+kb_274345,Storytelling / Presentasi
+li_4465019540,SQL
+li_4465019540,Excel
+li_4465019540,Power BI
+li_4465019540,Statistik
+li_4465019540,Visualisasi Data
+li_4465019540,Storytelling / Presentasi
+li_4465019540,ERP / SAP
+li_4476213059,SQL
+li_4476213059,Statistik
+li_4476213059,Machine Learning
+li_4454021580,SQL
+li_4454021580,Power BI
+li_4454021580,Tableau
+li_4454021580,Looker / Data Studio
+li_4454021580,Visualisasi Data
+li_4470873075,SQL
+li_4470873075,Python
+li_4470873075,Power BI
+li_4470873075,Tableau
+li_4470873075,Looker / Data Studio
+li_4470873075,Statistik
+li_4470873075,Visualisasi Data
+li_4470873075,Storytelling / Presentasi
+li_4480471317,SQL
+li_4480471317,Excel
+li_4480471317,Power BI
+li_4480471317,Tableau
+li_4480471317,Visualisasi Data
