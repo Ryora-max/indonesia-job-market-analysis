@@ -1,49 +1,50 @@
 # Key Metrics — Job Market Indonesia (dihitung otomatis)
 
-- Lowongan relevan: **296**
-- Peran analyst (judul match): **233** (79%)
-- Periode posting: **2025-01-29 s.d. 2026-10-27**
-- Menampilkan gaji: **18** (6%)
-- Remote: **5** (2%) | Hybrid: **29** (10%)
-- Fresh-grad friendly: **30** (10%)
+- Lowongan relevan: **465**
+- Peran analyst (judul match): **358** (77%)
+- Periode posting: **2025-01-23 s.d. 2026-10-28**
+- Menampilkan gaji: **18** (4%)
+- Remote: **5** (1%) | Hybrid: **29** (6%)
+- Fresh-grad friendly: **54** (12%)
 
 ## Top 10 skill
-- Excel: 78 lowongan (26%)
-- SQL: 76 lowongan (26%)
-- Statistik: 63 lowongan (21%)
-- Python: 51 lowongan (17%)
-- Google Sheets: 42 lowongan (14%)
-- Visualisasi Data: 42 lowongan (14%)
-- Storytelling / Presentasi: 37 lowongan (12%)
-- Machine Learning: 32 lowongan (11%)
-- JIRA / Agile: 30 lowongan (10%)
-- Power BI: 25 lowongan (8%)
+- SQL: 257 lowongan (55%)
+- Python: 193 lowongan (42%)
+- Excel: 172 lowongan (37%)
+- Visualisasi Data: 166 lowongan (36%)
+- Statistik: 164 lowongan (35%)
+- Power BI: 120 lowongan (26%)
+- ETL / Data Pipeline: 117 lowongan (25%)
+- Tableau: 86 lowongan (18%)
+- Storytelling / Presentasi: 80 lowongan (17%)
+- Machine Learning: 79 lowongan (17%)
 
 ## Keluarga peran
-- Analyst Lainnya: 111 (38%)
-- Data Analyst: 51 (17%)
-- Data Scientist: 37 (12%)
-- Business / System Analyst: 35 (12%)
-- Data Engineer: 21 (7%)
-- BI / Analytics: 12 (4%)
-- Ops & Domain Analyst: 12 (4%)
-- MIS / Reporting: 7 (2%)
+- Analyst Lainnya: 175 (38%)
+- Business / System Analyst: 69 (15%)
+- Data Engineer: 59 (13%)
+- Data Analyst: 57 (12%)
+- Data Scientist: 44 (9%)
+- BI / Analytics: 19 (4%)
+- Ops & Domain Analyst: 14 (3%)
+- MIS / Reporting: 13 (3%)
+- Marketing Analyst: 6 (1%)
 - Risk & Credit Analyst: 4 (1%)
-- Marketing Analyst: 4 (1%)
-- Financial Analyst: 2 (1%)
+- Financial Analyst: 3 (1%)
+- Product Analyst: 2 (0%)
 
 ## Top 5 provinsi
-- DKI Jakarta: 238 (80%)
-- Banten: 17 (6%)
-- Jawa Barat: 15 (5%)
-- Jawa Tengah: 5 (2%)
-- Jawa Timur: 4 (1%)
+- DKI Jakarta: 368 (79%)
+- Jawa Barat: 26 (6%)
+- Banten: 20 (4%)
+- Jawa Timur: 12 (3%)
+- Jawa Tengah: 7 (2%)
 
 ## Gaji (lowongan bergaji)
 - Median max: **Rp10.5 jt/bln**
 - Rentang max: Rp2.6 s.d. 25.0 jt
 
 ## Senioritas
-- Mid: 206 (70%)
-- Senior / Lead: 71 (24%)
-- Junior / Entry: 19 (6%)
+- Mid: 331 (71%)
+- Senior / Lead: 113 (24%)
+- Junior / Entry: 21 (5%)

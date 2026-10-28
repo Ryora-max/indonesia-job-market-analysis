@@ -33,8 +33,13 @@ QUERIES = [
     "people analytics", "web analyst", "finance analyst",
     "data support", "staf data", "report analyst",
     "quality assurance analyst", "revenue analyst",
+    "data officer", "data specialist", "analytics manager",
+    "bi developer", "bi engineer", "reporting specialist",
+    "insight", "database analyst", "quantitative analyst",
+    "strategy analyst", "business data", "data analyst intern",
+    "bi analyst", "analytics", "big data analyst",
 ]
-PER_PAGE, MAX_PAGES = 50, 16          # maks 800 lowongan per kata kunci
+PER_PAGE, MAX_PAGES = 50, 30          # maks 1500 lowongan per kata kunci
 
 
 def fetch(query, offset):

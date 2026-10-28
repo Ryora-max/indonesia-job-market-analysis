@@ -1,12 +1,13 @@
 role_family,n,pct_remote,pct_hybrid,pct_fresh_ok
-Analyst Lainnya,111,2.7,20.7,16.2
-Data Analyst,51,0.0,2.0,3.9
-Data Scientist,37,0.0,0.0,5.4
-Business / System Analyst,35,0.0,5.7,11.4
-Data Engineer,21,0.0,9.5,4.8
-BI / Analytics,12,0.0,0.0,0.0
-Ops & Domain Analyst,12,0.0,8.3,16.7
-MIS / Reporting,7,0.0,0.0,14.3
-Marketing Analyst,4,50.0,0.0,0.0
+Analyst Lainnya,175,1.7,13.1,16.0
+Business / System Analyst,69,0.0,2.9,13.0
+Data Engineer,59,0.0,3.4,3.4
+Data Analyst,57,0.0,1.8,8.8
+Data Scientist,44,0.0,0.0,4.5
+BI / Analytics,19,0.0,0.0,5.3
+Ops & Domain Analyst,14,0.0,7.1,28.6
+MIS / Reporting,13,0.0,0.0,23.1
+Marketing Analyst,6,33.3,0.0,0.0
 Risk & Credit Analyst,4,0.0,0.0,0.0
-Financial Analyst,2,0.0,0.0,0.0
+Financial Analyst,3,0.0,0.0,0.0
+Product Analyst,2,0.0,0.0,0.0

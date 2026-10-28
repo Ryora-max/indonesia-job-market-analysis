@@ -7,8 +7,11 @@ Semua data **riil**, bukan sintetis. Diambil dari endpoint publik pada
 
 | Sumber | Endpoint | Data yang didapat | Status |
 |---|---|---|---|
-| **Kalibrr** | `kalibrr.com/kjs/job_board/search` | Judul, perusahaan, industri, lokasi (city/region), deskripsi+kualifikasi lengkap, gaji (subset), tipe kerja, flag remote/hybrid/fresh-grad, kode pengalaman & pendidikan, tanggal posting | ✅ 1.716 fetch → 129 relevan |
-| **LinkedIn guest API** | `linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search` + `.../jobPosting/{id}` | Judul, perusahaan, lokasi, tanggal posting; detail (deskripsi, seniority, employment type, industri) untuk subset | ⚠️ 199 fetch → 167 relevan; 46/199 detail ter-fetch (throttle 429) |
+| **Kalibrr** | `kalibrr.com/kjs/job_board/search` | Judul, perusahaan, industri, lokasi (city/region), deskripsi+kualifikasi lengkap, gaji (subset), tipe kerja, flag remote/hybrid/fresh-grad, kode pengalaman & pendidikan, tanggal posting | ✅ sumber utama |
+| **LinkedIn guest API** | `linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search` + `.../jobPosting/{id}` | Judul, perusahaan, lokasi, tanggal posting; detail (deskripsi, seniority, employment type, industri) untuk subset | ⚠️ throttle 429 — detail parsial |
+| **JobStreet** | `id.jobstreet.com/api/chalice-search/v4` | — | ❌ bot-protection (challenge page) |
+| **Glints** | `glints.com/api/jobVacancies` | — | ❌ firewall blokir |
+| **RemoteOK / Remotive** | `remoteok.com/api`, `remotive.com/api` | — | ❌ tidak ada lowongan Indonesia-relevan |
 
 ## Catatan pengumpulan
 

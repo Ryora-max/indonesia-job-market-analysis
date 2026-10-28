@@ -1,23 +1,23 @@
 skill,n_lowongan,persen
-Excel,78,26.4
-SQL,76,25.7
-Statistik,63,21.3
-Python,51,17.2
-Google Sheets,42,14.2
-Visualisasi Data,42,14.2
-Storytelling / Presentasi,37,12.5
-Machine Learning,32,10.8
-JIRA / Agile,30,10.1
-Power BI,25,8.4
-Looker / Data Studio,21,7.1
-Tableau,19,6.4
-ETL / Data Pipeline,17,5.7
-Cloud (AWS/GCP/Azure),15,5.1
-ERP / SAP,11,3.7
-Airflow / Orchestrasi,8,2.7
-NoSQL / MongoDB,7,2.4
-Git,6,2.0
-Spark / Hadoop,5,1.7
-BigQuery,4,1.4
-SPSS / SAS,3,1.0
-dbt,2,0.7
+SQL,257,55.3
+Python,193,41.5
+Excel,172,37.0
+Visualisasi Data,166,35.7
+Statistik,164,35.3
+Power BI,120,25.8
+ETL / Data Pipeline,117,25.2
+Tableau,86,18.5
+Storytelling / Presentasi,80,17.2
+Machine Learning,79,17.0
+Cloud (AWS/GCP/Azure),71,15.3
+Google Sheets,68,14.6
+JIRA / Agile,65,14.0
+Looker / Data Studio,60,12.9
+Airflow / Orchestrasi,46,9.9
+Spark / Hadoop,46,9.9
+ERP / SAP,45,9.7
+BigQuery,35,7.5
+Git,31,6.7
+dbt,25,5.4
+NoSQL / MongoDB,16,3.4
+SPSS / SAS,14,3.0

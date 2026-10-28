@@ -1,21 +1,23 @@
 skill,n
-SQL,13
-Statistik,13
-Visualisasi Data,13
-Looker / Data Studio,8
-Power BI,8
-Python,7
-Tableau,7
-Excel,6
-Storytelling / Presentasi,6
-Machine Learning,4
-Google Sheets,3
-BigQuery,2
-ERP / SAP,2
-ETL / Data Pipeline,2
-Airflow / Orchestrasi,1
-Cloud (AWS/GCP/Azure),1
-Git,1
-NoSQL / MongoDB,1
-SPSS / SAS,1
-dbt,1
+Visualisasi Data,40
+SQL,38
+Power BI,31
+Statistik,31
+Python,29
+Excel,26
+Tableau,25
+Looker / Data Studio,22
+Google Sheets,12
+Storytelling / Presentasi,11
+BigQuery,9
+ETL / Data Pipeline,8
+dbt,7
+Airflow / Orchestrasi,6
+Machine Learning,6
+Git,5
+Cloud (AWS/GCP/Azure),4
+ERP / SAP,4
+NoSQL / MongoDB,3
+SPSS / SAS,3
+Spark / Hadoop,2
+JIRA / Agile,1

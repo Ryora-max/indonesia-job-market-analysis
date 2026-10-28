@@ -1,91 +1,94 @@
 # Executive Report — Indonesia Analytics Job Market
 
-**Basis:** 296 lowongan relevan (Kalibrr + LinkedIn guest API), snapshot
+**Basis:** 465 lowongan relevan (Kalibrr + LinkedIn guest API), snapshot
 Okt 2026. Semua angka dihitung `src/key_metrics.py`; uji statistik di
 `notebooks/02_statistik_job_market.ipynb`. **Data riil, bukan sintetis.**
 
 ## Ringkasan eksekutif
 
-Pasar kerja analitik Indonesia terkonsentrasi ekstrem di Jakarta,
-didominasi permintaan skill fundamental (Excel, SQL, statistik) — bukan
-tools hype — dengan transparansi gaji yang sangat rendah dan peluang
-remote yang hampir tidak ada. Untuk pencari kerja profil data analyst,
-pasar ini menuntut strategi *Jakarta-centric* atau menunggu lebih lama
-untuk posisi regional.
+Pasar kerja analitik Indonesia terkonsentrasi ekstrem di Jakarta dan
+— temuan paling penting — **tersegmentasi oleh platform**: Kalibrr
+melayani segmen spreadsheet-first (Excel 60%), LinkedIn melayani segmen
+teknikal (SQL 66%, Python 53%). Pertanyaan "skill apa yang diminta
+pasar?" tidak punya satu jawaban; jawabannya bergantung kanal.
 
 ## Temuan terkuantifikasi
 
 ### 1. Komposisi permintaan
-- **296** lowongan relevan dari **1.890** hasil fetch → hanya **~16%**
-  hasil pencarian yang benar-benar relevan. Noise job board tinggi:
-  fuzzy matching mengembalikan "Community Officer" untuk query analyst.
-- 79% berjudul analyst/data; 21% peran adjacent yang menuntut skill
-  analitik (sales, ops, IT).
-- Keluarga peran terbesar: **Data Analyst (17%)**, Data Scientist (13%),
-  Business/System Analyst (12%), Data Engineer (7%) — sisanya analyst
+- **465** lowongan relevan dari **2.110** hasil fetch → hanya **~22%**
+  hasil pencarian yang benar-benar relevan (Kalibrr ~8%, LinkedIn ~85%:
+  pencarian LinkedIn jauh lebih presisi untuk peran ini).
+- 77% berjudul analyst/data; 23% peran adjacent yang menuntut skill
+  analitik.
+- Keluarga peran terbesar: Business/System Analyst (15%), Data Engineer
+  (13%), Data Analyst (12%), Data Scientist (9%); sisanya analyst
   lintas domain (38%).
-- Senioritas: 69% Mid, 24% Senior/Lead, hanya 6% Junior/Entry.
+- Senioritas: 71% Mid, 24% Senior/Lead, 5% Junior/Entry → pasar
+  mencari yang sudah jadi, bukan melatih dari nol.
 
-### 2. Geografi & cara kerja
-- **80% lowongan di DKI Jakarta**; Banten 6%, Jawa Barat 5%. → Pasar
+### 2. Dua platform, dua pasar
+| Skill | Kalibrr (n=117) | LinkedIn (n=319) |
+|---|---|---|
+| Excel | **60%** | 32% |
+| SQL | 41% | **66%** |
+| Google Sheets | 36% | 8% |
+| Python | 21% | **53%** |
+| Power BI | 10% | **34%** |
+| ETL/Pipeline | 11% | **33%** |
+| Visualisasi | 24% | **43%** |
+| Statistik | 27% | 41% |
+
+Share atas lowongan ber-skill terdeteksi per platform — angka riil,
+bukan estimasi.
+
+→ Kalibrr mensampling UKM/perusahaan lokal (spreadsheet-first);
+LinkedIn mensampling enterprise/tech (stack-first). Untuk pencari
+kerja: Excel membuka pintu di segmen lokal, SQL+Python di segmen
+enterprise — **roadmap belajar ideal mencakup keduanya**.
+
+### 3. Geografi & cara kerja
+- **79% lowongan di DKI Jakarta**; Jawa Barat 6%, Banten 4% — pasar
   analitik praktis = pasar Jakarta.
-- Remote murni: **1,7%**. Hybrid: 9,8%. → On-site masih default.
-- 89% full-time; 10% kontrak; freelance nyaris tidak ada.
-
-### 3. Skill demand (basis 160 lowongan dengan skill terdeteksi)
-| Skill | Share |
-|---|---|
-| Excel | 26% |
-| SQL | 26% |
-| Statistik | 21% |
-| Python | 17% |
-| Google Sheets | 14% |
-| Visualisasi Data | 14% |
-| Storytelling/Presentasi | 12% |
-| Machine Learning | 11% |
-| Power BI | 8% |
-
-→ **Paket minimal employable:** Excel + SQL + statistik dasar. Python
-adalah pembeda, bukan prasyarat universal. ML diminta 1 dari 9 — niche,
-bukan mainstream.
+- Remote murni: **1%**. Hybrid: 6%. → On-site tetap default.
+- Fresh-grad friendly hanya ~12% + junior hanya 5% → pintu masuk
+  paling realistis via internship/MBKM, bukan lowongan terbuka.
 
 ### 4. Gaji — temuan dengan keterbatasan keras
-- Hanya **18/296 (6%)** lowongan menampilkan gaji (Kalibrr saja).
+- Hanya **18/465 (4%)** lowongan menampilkan gaji (Kalibrr saja;
+  LinkedIn tidak menampilkan gaji di guest API).
 - Median gaji max: **Rp10,5 jt/bln**; rentang Rp2,6–25 jt.
-- Per senioritas (n sangat kecil): Junior ~6,8 (n=2) → Mid 10,0 (n=14)
-  → Senior ~22,5 (n=2). Arah naik konsisten tapi **bukan estimasi
-  pasar** — indikatif saja.
+- Per senioritas (n kecil): Junior ~6,8 → Mid 10,0 → Senior ~22,5.
 
 ### 5. Perusahaan & industri
 - Industri teraktif: IT (43), Financial Services (22), E-Commerce (20).
-- Perekru teratas: Astro Technologies (20), BFI Finance (12), Kompas
-  Gramedia (8), Ruangguru (6), Kredivo (6) → fintech + media + edtech
-  mendominasi rekrutmen analitik.
+- Perekrut teratas: Astro Technologies (20), BFI Finance (12), Kredivo
+  (9), Kompas Gramedia (8), Monee (8), Ruangguru (6) → fintech, media,
+  edtech mendominasi.
 
 ## Uji statistik — termasuk yang TIDAK signifikan
 
 | Uji | Hasil | Interpretasi |
 |---|---|---|
-| Judul analyst × senioritas | chi²=3,6, **p=0,17** | Tidak ada asosiasi — level senioritas tidak bergantung pada apakah perusahaan menamai peran "analyst" |
-| Judul analyst × fresh-grad | chi²=3,7, **p=0,053** | Borderline — arahnya justru sebaliknya: peran non-analyst *lebih* terbuka ke fresh grad (17,5% vs 8,2%) |
-| Gaji junior < senior | n terlalu kecil | Deskriptif saja; uji tidak layak secara etis |
+| Judul analyst × senioritas | chi²=1,3, p=0,51 | Tidak ada asosiasi |
+| Judul analyst × fresh-grad | chi²=1,1, p=0,29 | Tidak ada asosiasi |
+| Gaji junior < senior | n=18 | Deskriptif saja |
 
-**Integritas analisis:** melaporkan hasil non-signifikan sama pentingnya
-dengan yang signifikan — itu yang membedakan laporan analis dari daftar
-angka.
+**Integritas:** dengan n=465 dan tetap tidak signifikan, kesimpulan
+"tidak ada asosiasi" lebih kuat dari sebelumnya — bukan kurang bukti,
+melainkan memang tidak ada pola.
 
 ## Keterbatasan (wajib dibaca)
 
-1. Sampel 2 platform; JobStreet/Glints tidak tercakup → bukan sensus.
-2. Deskripsi LinkedIn ter-fetch hanya 46/199 (throttle) → analisis
-   skill dominan Kalibrr.
-3. Ekstraksi skill via regex — akurat untuk penyebutan eksplisit.
-4. Gaji: bias ke perusahaan transparan, n=18.
-5. Tanggal posting = aktivasi platform, Nov 2025–Okt 2026.
+1. Sampel 2 platform; JobStreet (bot-block), Glints (firewall),
+   RemoteOK (no ID) tidak tercakup → bukan sensus.
+2. Skill mix berbeda antar platform = sampling artefak, dicatat apa
+   adanya — bukan digabung jadi satu angka.
+3. Gaji: bias ke perusahaan transparan, n=18.
+4. Snapshot Nov 2025–Okt 2026; tanggal posting = aktivasi platform.
 
-## Implikasi untuk pencari kerja (konteks portfolio)
+## Implikasi untuk pencari kerja
 
-Dataset ini sekaligus menjawab "skill apa yang layak diprioritaskan":
-Excel+SQL+statistik adalah lantai; Python membedakan; Jakarta adalah
-medan utama. Portfolio tiga project ini memetakan persis kompetensi
-tersebut.
+Excel+SQL adalah lantai universal; Python membedakan di segmen
+enterprise; Jakarta adalah medan utama; dan — temuan paling berguna —
+**pilih platform sesuai target segmen**, karena keduanya memotret
+pasar yang berbeda.

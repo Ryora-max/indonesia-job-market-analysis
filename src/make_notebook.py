@@ -50,10 +50,11 @@ cells = [
     nbf.v4.new_markdown_cell(
         "## Insight utama\n"
         "1. Pasar analitik RI terkonsentrasi ekstrem di DKI Jakarta.\n"
-        "2. Excel & SQL > Python: skill fundamental mengalahkan tools hype.\n"
+        "2. Dua platform, dua pasar: Kalibrr=Excel-first (UKM), "
+        "LinkedIn=SQL/Python-first (enterprise).\n"
         "3. Remote murni langka — hybrid mulai muncul tapi minoritas.\n"
         "4. Transparansi gaji sangat rendah: analisis gaji bias.\n"
-        "5. Search job board noisy: ~8-17% hasil benar-benar relevan."),
+        "5. Search job board noisy: ~22% hasil benar-benar relevan."),
 ]
 nb.cells = cells
 nbf.write(nb, "notebooks/01_job_market_eda.ipynb")
