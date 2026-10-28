@@ -7,8 +7,8 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 Portofolio Data Analyst: analisis **pasar kerja analitik Indonesia** dari
-**data riil** — 2.110 lowongan diambil dari API publik Kalibrr + LinkedIn
-guest API, disaring menjadi **465 lowongan relevan** untuk profil data
+**data riil** — 2.350 lowongan diambil dari API publik Kalibrr + LinkedIn
+guest API, disaring menjadi **472 lowongan relevan** untuk profil data
 analyst, lalu diekstrak skill, gaji, lokasi, dan pola perekrutannya.
 
 > **Bedanya dengan 2 project lain di portfolio ini:** data di sini **bukan
@@ -28,8 +28,8 @@ analyst, lalu diekstrak skill, gaji, lokasi, dan pola perekrutannya.
 
 ## Temuan kunci (dihitung via `src/key_metrics.py`)
 
-- **465 lowongan relevan** dari 2.110 hasil fetch dua platform — hanya
-  **~22% hasil pencarian yang benar-benar relevan** → job board search
+- **472 lowongan relevan** dari 2.350 hasil fetch dua platform — hanya
+  **~20% hasil pencarian yang benar-benar relevan** → job board search
   itu noisy; filtering adalah bagian terbesar pekerjaan nyata.
 - **Dua platform = dua segmen pasar berbeda.** Kalibrr: Excel 60%,
   SQL 41% (UMKM/lokal). LinkedIn: SQL 66%, Python 53%, Power BI 34%

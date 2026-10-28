@@ -1,14 +1,14 @@
 senioritas,role_family,n
 Junior / Entry,Analyst Lainnya,10
-Junior / Entry,Data Analyst,4
+Junior / Entry,Data Analyst,5
 Junior / Entry,MIS / Reporting,2
 Junior / Entry,Business / System Analyst,2
 Junior / Entry,Risk & Credit Analyst,1
 Junior / Entry,Data Scientist,1
 Junior / Entry,BI / Analytics,1
-Mid,Analyst Lainnya,123
+Mid,Analyst Lainnya,126
 Mid,Business / System Analyst,58
-Mid,Data Engineer,43
+Mid,Data Engineer,45
 Mid,Data Analyst,37
 Mid,Data Scientist,24
 Mid,Ops & Domain Analyst,13
@@ -16,8 +16,8 @@ Mid,MIS / Reporting,11
 Mid,BI / Analytics,11
 Mid,Marketing Analyst,5
 Mid,Financial Analyst,3
+Mid,Risk & Credit Analyst,2
 Mid,Product Analyst,2
-Mid,Risk & Credit Analyst,1
 Senior / Lead,Analyst Lainnya,42
 Senior / Lead,Data Scientist,19
 Senior / Lead,Data Engineer,16

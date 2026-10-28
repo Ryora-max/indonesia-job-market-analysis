@@ -1,6 +1,6 @@
 # Executive Report — Indonesia Analytics Job Market
 
-**Basis:** 465 lowongan relevan (Kalibrr + LinkedIn guest API), snapshot
+**Basis:** 472 lowongan relevan (Kalibrr + LinkedIn guest API), snapshot
 Okt 2026. Semua angka dihitung `src/key_metrics.py`; uji statistik di
 `notebooks/02_statistik_job_market.ipynb`. **Data riil, bukan sintetis.**
 
@@ -15,7 +15,7 @@ pasar?" tidak punya satu jawaban; jawabannya bergantung kanal.
 ## Temuan terkuantifikasi
 
 ### 1. Komposisi permintaan
-- **465** lowongan relevan dari **2.110** hasil fetch → hanya **~22%**
+- **472** lowongan relevan dari **2.350** hasil fetch → hanya **~20%**
   hasil pencarian yang benar-benar relevan (Kalibrr ~8%, LinkedIn ~85%:
   pencarian LinkedIn jauh lebih presisi untuk peran ini).
 - 77% berjudul analyst/data; 23% peran adjacent yang menuntut skill
@@ -54,7 +54,7 @@ enterprise — **roadmap belajar ideal mencakup keduanya**.
   paling realistis via internship/MBKM, bukan lowongan terbuka.
 
 ### 4. Gaji — temuan dengan keterbatasan keras
-- Hanya **18/465 (4%)** lowongan menampilkan gaji (Kalibrr saja;
+- Hanya **19/472 (4%)** lowongan menampilkan gaji (Kalibrr saja;
   LinkedIn tidak menampilkan gaji di guest API).
 - Median gaji max: **Rp10,5 jt/bln**; rentang Rp2,6–25 jt.
 - Per senioritas (n kecil): Junior ~6,8 → Mid 10,0 → Senior ~22,5.
@@ -73,7 +73,7 @@ enterprise — **roadmap belajar ideal mencakup keduanya**.
 | Judul analyst × fresh-grad | chi²=1,1, p=0,29 | Tidak ada asosiasi |
 | Gaji junior < senior | n=18 | Deskriptif saja |
 
-**Integritas:** dengan n=465 dan tetap tidak signifikan, kesimpulan
+**Integritas:** dengan n=472 dan tetap tidak signifikan, kesimpulan
 "tidak ada asosiasi" lebih kuat dari sebelumnya — bukan kurang bukti,
 melainkan memang tidak ada pola.
 

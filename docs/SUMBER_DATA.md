@@ -8,7 +8,7 @@ Semua data **riil**, bukan sintetis. Diambil dari endpoint publik pada
 | Sumber | Endpoint | Data yang didapat | Status |
 |---|---|---|---|
 | **Kalibrr** | `kalibrr.com/kjs/job_board/search` | Judul, perusahaan, industri, lokasi (city/region), deskripsi+kualifikasi lengkap, gaji (subset), tipe kerja, flag remote/hybrid/fresh-grad, kode pengalaman & pendidikan, tanggal posting | ✅ sumber utama |
-| **LinkedIn guest API** | `linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search` + `.../jobPosting/{id}` | Judul, perusahaan, lokasi, tanggal posting; detail (deskripsi, seniority, employment type, industri) untuk subset | ⚠️ throttle 429 — detail parsial |
+| **LinkedIn guest API** | `linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search` + `.../jobPosting/{id}` | Judul, perusahaan, lokasi, tanggal posting; detail (deskripsi, seniority, employment type, industri) untuk subset | ⚠️ throttle 429 — diatasi dgn drip-fetch |
 | **JobStreet** | `id.jobstreet.com/api/chalice-search/v4` | — | ❌ bot-protection (challenge page) |
 | **Glints** | `glints.com/api/jobVacancies` | — | ❌ firewall blokir |
 | **RemoteOK / Remotive** | `remoteok.com/api`, `remotive.com/api` | — | ❌ tidak ada lowongan Indonesia-relevan |
@@ -37,7 +37,7 @@ Semua data **riil**, bukan sintetis. Diambil dari endpoint publik pada
 3. **Gaji**: hanya Kalibrr yang menampilkannya, dan hanya ~6% lowongan.
    Analisis gaji = kondisi perusahaan transparan, bukan pasar.
 4. **Deskripsi LinkedIn**: throttle 429 membatasi fetch detail ke
-   46/199 → analisis skill masih dominan Kalibrr; kontribusi LinkedIn
+   394/394 detail → analisis skill kini mencakup kedua platform secara berimbang; kontribusi LinkedIn
    terutama pada komposisi peran/lokasi/perusahaan/tren.
 5. **Snapshot**: tanggal posting = tanggal aktivasi di platform,
    November 2025 – Oktober 2026.
