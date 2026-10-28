@@ -28,6 +28,11 @@ QUERIES = [
     "data administrator", "data admin", "staff data",
     "analisa data", "kpi", "performance reporting",
     "big data", "data processing", "data management",
+    "junior analyst", "senior analyst", "market research",
+    "insight analyst", "digital analyst", "growth analyst",
+    "people analytics", "web analyst", "finance analyst",
+    "data support", "staf data", "report analyst",
+    "quality assurance analyst", "revenue analyst",
 ]
 PER_PAGE, MAX_PAGES = 50, 16          # maks 800 lowongan per kata kunci
 

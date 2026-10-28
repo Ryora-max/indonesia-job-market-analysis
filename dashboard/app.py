@@ -207,11 +207,16 @@ with tab1:
 # ================= TAB 2: SKILL DEMAND ================= #
 with tab2:
     c1, c2 = st.columns([3, 2])
+    n_desc = lv.id_lowongan.isin(sk.id_lowongan).sum()
+    st.caption(f"Basis: {n_desc} lowongan dengan deskripsi lengkap "
+               f"(Kalibrr {lv[lv.sumber=='kalibrr'].id_lowongan.isin(sk.id_lowongan).sum()}"
+               f"/{len(lv[lv.sumber=='kalibrr'])}, LinkedIn subset — "
+               f"LinkedIn di-throttle saat fetch detail)")
     with c1:
         sec("🧩", "Skill Paling Diminta")
         skill_n = (sk.skill.value_counts()
                    .rename_axis("skill").reset_index(name="n"))
-        skill_n["persen"] = skill_n.n / n
+        skill_n["persen"] = skill_n.n / n_desc
         chart(px.bar(skill_n.head(15), x="persen", y="skill",
                      orientation="h", color="persen",
                      color_continuous_scale="Purples",
@@ -249,7 +254,8 @@ with tab2:
               .update_layout(coloraxis_showscale=False, height=380,
                              yaxis=dict(autorange="reversed")))
         insight(f"Combo terkuat: **{co.iloc[0]['pair']}** — "
-                f"paket minimal employable untuk {n} lowongan ini.", "pos")
+                f"paket minimal employable dari {n_desc} lowongan "
+                f"ber-deskripsi.", "pos")
 
 # ================= TAB 3: GAJI & LOKASI ================= #
 with tab3:

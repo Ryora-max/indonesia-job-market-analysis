@@ -5,7 +5,7 @@ nb = nbf.v4.new_notebook()
 cells = [
     nbf.v4.new_markdown_cell(
         "# EDA — Indonesia Analytics Job Market\n"
-        "Data riil: 295 lowongan relevan (Kalibrr + LinkedIn guest API).\n"
+        "Data riil: lowongan relevan (Kalibrr + LinkedIn guest API).\n"
         "**Catatan:** data ini bukan sintetis — noise dan missingness "
         "adalah bagian dari kenyataan data riil."),
     nbf.v4.new_code_cell(
