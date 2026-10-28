@@ -34,7 +34,7 @@ Semua data **riil**, bukan sintetis. Diambil dari endpoint publik pada
    dataset ini *sampel pasar*, bukan sensus.
 2. **Skill**: diekstrak regex dari teks — akurat untuk skill eksplisit,
    bisa meleset pada penyebutan ambigu.
-3. **Gaji**: hanya Kalibrr yang menampilkannya, dan hanya ~6% lowongan.
+3. **Gaji**: hanya Kalibrr yang menampilkannya, dan hanya ~4% lowongan.
    Analisis gaji = kondisi perusahaan transparan, bukan pasar.
 4. **Deskripsi LinkedIn**: throttle 429 membatasi fetch detail ke
    394/394 detail → analisis skill kini mencakup kedua platform secara berimbang; kontribusi LinkedIn
