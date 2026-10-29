@@ -1,9 +1,22 @@
 skill,n_bergaji,avg_gaji_max_jt
-JIRA / Agile,3,15.5
-SQL,4,15.0
-Cloud (AWS/GCP/Azure),3,14.7
+NoSQL / MongoDB,3,23.3
+React,3,23.3
+Testing / QA Tools,7,21.0
+CI/CD,4,20.0
+JIRA / Agile,9,18.7
+JavaScript/TypeScript,7,18.3
+API / Integrasi,8,17.9
+Git,8,17.9
+Java,7,17.9
+Airflow / Orchestrasi,4,17.8
+Cloud (AWS/GCP/Azure),7,17.5
+Docker / K8s,4,16.0
+ERP / SAP,3,14.2
+SQL,15,14.0
+Visualisasi Data,3,13.7
 Python,4,13.5
-Storytelling / Presentasi,5,12.6
+Networking,15,10.7
+Storytelling / Presentasi,13,10.6
 Statistik,4,9.8
-Excel,8,6.5
-Google Sheets,6,5.4
+Excel,15,7.3
+Google Sheets,8,6.0

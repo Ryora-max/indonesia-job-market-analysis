@@ -31,6 +31,10 @@ top = (sk.skill.value_counts().head(10))
 for s, c in top.items():
     add(f"- {s}: {c} lowongan ({c/n:.0%})")
 add()
+add("## Domain pekerjaan")
+for d, c in lv.domain.value_counts().items():
+    add(f"- {d}: {c} ({c/n:.0%})")
+add()
 add("## Keluarga peran")
 for r, c in lv.role_family.value_counts().items():
     add(f"- {r}: {c} ({c/n:.0%})")

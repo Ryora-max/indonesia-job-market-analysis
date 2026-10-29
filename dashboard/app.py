@@ -101,7 +101,9 @@ def md(isi_md):
 st.sidebar.markdown("## 🎛️ Filter Data")
 st.sidebar.caption("Semua visual mengikuti filter ini")
 
-fam_list = sorted(lv_all.role_family.unique())
+dom_list = sorted(lv_all.domain.dropna().unique())
+dom_pilih = st.sidebar.multiselect("Segmen", dom_list, default=dom_list)
+fam_list = sorted(lv_all[lv_all.domain.isin(dom_pilih)].role_family.unique())
 fam_pilih = st.sidebar.multiselect("Keluarga Peran", fam_list, default=fam_list)
 prov_list = sorted(lv_all.provinsi.dropna().unique())
 prov_pilih = st.sidebar.multiselect("Provinsi", prov_list, default=prov_list)
@@ -111,7 +113,8 @@ st.sidebar.divider()
 st.sidebar.caption("📊 Data riil: Kalibrr + LinkedIn guest API, "
                    "diambil via endpoint publik · lihat docs/SUMBER_DATA.md")
 
-lv = lv_all[(lv_all.role_family.isin(fam_pilih)) &
+lv = lv_all[(lv_all.domain.isin(dom_pilih)) &
+            (lv_all.role_family.isin(fam_pilih)) &
             (lv_all.provinsi.isin(prov_pilih) | lv_all.provinsi.isna()) &
             (lv_all.senioritas.isin(sen_pilih))]
 if lv.empty:
@@ -124,17 +127,18 @@ n = len(lv)
 # ---------------- Hero + KPI ---------------- #
 st.markdown("""
 <div class="hero">
-  <h1>📈 Indonesia Analytics Job Market</h1>
-  <p>Peta permintaan skill analitik dari lowongan RIIL Kalibrr —
-     skill, gaji, lokasi, dan pola perekrutan untuk profil data analyst</p>
+  <h1>📈 Indonesia IT & Data Job Market</h1>
+  <p>Peta pasar kerja IT dari lowongan RIIL Kalibrr + LinkedIn —
+     skill demand, gaji, lokasi, dan pola perekrutan per segmen</p>
 </div>
 """, unsafe_allow_html=True)
 
 top_skill = sk.skill.value_counts().idxmax() if len(sk) else "-"
 pct_gaji = lv.gaji_max_jt.notna().mean()
 kpis = [
-    ("Lowongan Relevan", f"{n:,}", f"{lv.peran_analyst.sum()} judul analyst"),
-    ("Peran Analyst", f"{lv.peran_analyst.mean():.0%}", "judul mengandung analyst/data"),
+    ("Lowongan Relevan", f"{n:,}", f"{lv.domain.nunique()} segmen"),
+    ("Peran Data", f"{(lv.domain=='Data & Analytics').mean():.0%}",
+     "analyst/data di judul"),
     ("Skill Terdeteksi", f"{sk.skill.nunique()}", f"top: {top_skill}"),
     ("Tampilkan Gaji", f"{pct_gaji:.0%}", "hanya Kalibrr — transparansi rendah"),
     ("Remote / Hybrid", f"{lv.remote.mean()+lv.hybrid.mean():.0%}",
@@ -153,13 +157,20 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs(
 with tab1:
     c1, c2 = st.columns([3, 2])
     with c1:
-        sec("🗂️", "Keluarga Peran")
-        fam = lv.role_family.value_counts().reset_index()
+        sec("🗂️", "Segmen & Keluarga Peran")
+        dom = lv.domain.value_counts().reset_index()
+        dom.columns = ["domain", "n"]
+        chart(px.bar(dom, x="n", y="domain", orientation="h",
+                     color="n", color_continuous_scale="Purples",
+                     labels={"n": "Lowongan", "domain": ""})
+              .update_layout(coloraxis_showscale=False, height=150,
+                             yaxis=dict(autorange="reversed")))
+        fam = lv.role_family.value_counts().head(12).reset_index()
         fam.columns = ["role", "n"]
         chart(px.bar(fam, x="n", y="role", orientation="h",
                      color="n", color_continuous_scale="Purples",
                      labels={"n": "Lowongan", "role": ""})
-              .update_layout(coloraxis_showscale=False, height=340,
+              .update_layout(coloraxis_showscale=False, height=320,
                              yaxis=dict(autorange="reversed")))
     with c2:
         sec("📊", "Senioritas & Tipe Kerja")
@@ -344,9 +355,9 @@ with tab5:
     sec("🔍", "Jelajah Lowongan")
     cari = st.text_input("Cari judul / perusahaan", "")
     kol = st.multiselect("Kolom",
-        ["judul", "sumber", "role_family", "perusahaan", "industri", "kota",
-         "provinsi", "tipe", "senioritas", "pengalaman", "pendidikan",
-         "gaji_min_jt", "gaji_max_jt", "remote", "hybrid",
+        ["judul", "sumber", "domain", "role_family", "perusahaan",
+         "industri", "kota", "provinsi", "tipe", "senioritas", "pengalaman",
+         "pendidikan", "gaji_min_jt", "gaji_max_jt", "remote", "hybrid",
          "fresh_grad_ok", "tgl_posting"],
         default=["judul", "perusahaan", "kota", "role_family",
                  "senioritas", "gaji_max_jt", "tgl_posting"])

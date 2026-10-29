@@ -1,23 +1,40 @@
 skill,n_lowongan,persen
-SQL,260,55.1
-Python,194,41.1
-Excel,174,36.9
-Visualisasi Data,168,35.6
-Statistik,166,35.2
-Power BI,120,25.4
-ETL / Data Pipeline,119,25.2
-Tableau,86,18.2
-Storytelling / Presentasi,82,17.4
-Machine Learning,79,16.7
-Cloud (AWS/GCP/Azure),73,15.5
-Google Sheets,69,14.6
-JIRA / Agile,65,13.8
-Looker / Data Studio,60,12.7
-Airflow / Orchestrasi,46,9.7
-Spark / Hadoop,46,9.7
-ERP / SAP,45,9.5
-BigQuery,35,7.4
-Git,31,6.6
-dbt,25,5.3
-NoSQL / MongoDB,16,3.4
-SPSS / SAS,14,3.0
+SQL,523,34.3
+Python,365,24.0
+API / Integrasi,346,22.7
+Networking,339,22.2
+Excel,269,17.7
+Git,263,17.3
+JavaScript/TypeScript,263,17.3
+Cloud (AWS/GCP/Azure),246,16.1
+CI/CD,242,15.9
+JIRA / Agile,237,15.6
+Visualisasi Data,236,15.5
+Storytelling / Presentasi,229,15.0
+Statistik,200,13.1
+Docker / K8s,188,12.3
+Java,174,11.4
+Power BI,148,9.7
+ETL / Data Pipeline,147,9.6
+React,142,9.3
+Testing / QA Tools,136,8.9
+ERP / SAP,134,8.8
+Google Sheets,134,8.8
+Machine Learning,116,7.6
+Tableau,104,6.8
+Linux,102,6.7
+Airflow / Orchestrasi,89,5.8
+Node.js,87,5.7
+NoSQL / MongoDB,72,4.7
+Looker / Data Studio,68,4.5
+PHP / Laravel,65,4.3
+Spark / Hadoop,49,3.2
+Golang,46,3.0
+BigQuery,44,2.9
+Flutter,38,2.5
+Figma / Design Tool,31,2.0
+dbt,27,1.8
+SPSS / SAS,17,1.1
+Firebase / Supabase,16,1.0
+CMS / WordPress,14,0.9
+R,1,0.1

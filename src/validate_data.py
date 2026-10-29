@@ -14,6 +14,10 @@ check("id_lowongan unik", lv.id_lowongan.is_unique)
 check("judul tidak kosong", lv.judul.notna().all())
 check("peran_analyst boolean", lv.peran_analyst.dtype == bool)
 check("role_family terisi", lv.role_family.notna().all())
+check("domain terisi & valid", lv.domain.isin([
+    "Data & Analytics", "Software Engineering", "Infra & Network",
+    "Security", "IT Support", "IT Mgmt & Consulting", "Design (UI/UX)",
+    "Adjacent (non-IT)"]).all())
 check("senioritas valid", lv.senioritas.isin(
     ["Junior / Entry", "Mid", "Senior / Lead"]).all())
 check("tgl_posting format", lv.tgl_posting.str.match(r"\d{4}-\d{2}-\d{2}").all())

@@ -22,7 +22,12 @@ SEARCH = ("https://www.linkedin.com/jobs-guest/jobs/api/"
 DETAIL = "https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{}"
 QUERIES = ["data analyst", "business analyst", "data scientist",
            "business intelligence", "data engineer", "analytics",
-           "MIS analyst", "system analyst", "reporting analyst"]
+           "MIS analyst", "system analyst", "reporting analyst",
+           "software engineer", "web developer", "frontend",
+           "backend", "fullstack", "mobile developer",
+           "devops", "qa engineer", "it support", "ui ux",
+           "security engineer", "erp consultant", "it project manager",
+           "network engineer", "system administrator", "database administrator"]
 PER_PAGE, MAX_PAGES = 10, 10            # s.d. 100 per kata kunci
 
 TITLE_RE = re.compile(r'base-search-card__title[^>]*>\s*([^<]+)')

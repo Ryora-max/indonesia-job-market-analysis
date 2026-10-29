@@ -38,8 +38,8 @@ nb.cells = [
 
     nbf.v4.new_markdown_cell(
         "## 3. Gaji: Junior vs Senior\n"
-        "⚠️ Hanya ~17 lowongan menampilkan gaji → power sangat rendah. "
-        "Hasil bersifat indikatif, BUKAN bukti."),
+        "⚠️ Hanya ~48 lowongan menampilkan gaji (~3%) → power rendah. "
+        "Hasil bersifat indikatif, BUKAN estimasi pasar."),
     nbf.v4.new_code_cell(
         "bg = lv.dropna(subset=['gaji_max_jt'])\n"
         "print(bg.groupby('senioritas').gaji_max_jt\n"
@@ -53,7 +53,35 @@ nb.cells = [
         "    print('n per grup terlalu kecil untuk uji — dilaporkan deskriptif saja')"),
 
     nbf.v4.new_markdown_cell(
-        "## 4. Skill × keluarga peran — mana yang membedakan?\n"
+        "## 4. Apakah domain menentukan peluang fresh-grad?\n"
+        "Chi-square: `domain` × `fresh_grad_ok` — domain dengan expected "
+        "count <5 digabung 'Lainnya'."),
+    nbf.v4.new_code_cell(
+        "dom = lv.domain.value_counts()\n"
+        "lv3 = lv.copy()\n"
+        "lv3['dom'] = np.where(lv3.domain.isin(dom[dom>=50].index),\n"
+        "                      lv3.domain, 'Lainnya')\n"
+        "ctd = pd.crosstab(lv3.dom, lv3.fresh_grad_ok)\n"
+        "chi2, p, dof, exp = stats.chi2_contingency(ctd)\n"
+        "print(ctd, '\\n')\n"
+        "print((ctd.div(ctd.sum(1), axis=0)[True]*100)\n"
+        "      .round(1).rename('fresh-grad %'))\n"
+        "print(f'chi2={chi2:.1f}, p={p:.4g}, dof={dof}')"),
+
+    nbf.v4.new_markdown_cell(
+        "## 5. Platform × domain — dua platform, dua pasar\n"
+        "Apakah komposisi domain berbeda antara Kalibrr dan LinkedIn?"),
+    nbf.v4.new_code_cell(
+        "ctp = pd.crosstab(lv3.dom, lv3.sumber)\n"
+        "chi2, p, dof, _ = stats.chi2_contingency(ctp)\n"
+        "n_ = ctp.values.sum()\n"
+        "v = np.sqrt(chi2 / (n_ * (min(ctp.shape) - 1)))\n"
+        "print(ctp)\n"
+        "print(f'chi2={chi2:.1f}, p={p:.4g}, CramérV={v:.3f}')\n"
+        "print('CramérV > 0.3 = asosiasi kuat antar platform dan domain')"),
+
+    nbf.v4.new_markdown_cell(
+        "## 6. Skill × keluarga peran — mana yang membedakan?\n"
         "Untuk tiap skill top-8: chi-square hadir/tidak × role_family "
         "(family kecil digabung 'Lainnya')."),
     nbf.v4.new_code_cell(
@@ -74,10 +102,12 @@ nb.cells = [
     nbf.v4.new_markdown_cell(
         "## Kesimpulan\n"
         "- Uji signifikan → laporkan; tidak signifikan → katakan jujur.\n"
-        "- Dataset riil berukuran 295: efek kecil tidak akan terdeteksi "
-        "secara statistik — itu sendiri temuan metodologis.\n"
-        "- Analisis gaji dibatasi ~6% coverage: kesimpulan gaji bersifat "
-        "hipotesis, bukan estimasi pasar."),
+        "- Dataset riil ~1.500 lowongan: uji bermakna untuk efek "
+        "sedang-besar; efek sangat kecil tetap sulit dideteksi.\n"
+        "- Analisis gaji dibatasi ~3% coverage: kesimpulan gaji bersifat "
+        "hipotesis, bukan estimasi pasar.\n"
+        "- Hasil non-signifikan dilaporkan apa adanya — bukan "
+        "dirapikan demi narasi."),
 ]
 nbf.write(nb, "notebooks/02_statistik_job_market.ipynb")
 print("notebook 2 dibuat")

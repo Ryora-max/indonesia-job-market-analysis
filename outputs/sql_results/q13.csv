@@ -1,0 +1,39 @@
+domain,skill,n
+Adjacent (non-IT),Networking,150
+Adjacent (non-IT),Storytelling / Presentasi,119
+Adjacent (non-IT),Excel,113
+Adjacent (non-IT),Google Sheets,91
+Adjacent (non-IT),SQL,53
+Data & Analytics,SQL,210
+Data & Analytics,Python,179
+Data & Analytics,Statistik,154
+Data & Analytics,Visualisasi Data,150
+Data & Analytics,Excel,118
+Design (UI/UX),Figma / Design Tool,2
+Design (UI/UX),JavaScript/TypeScript,1
+Design (UI/UX),CMS / WordPress,1
+IT Mgmt & Consulting,ERP / SAP,60
+IT Mgmt & Consulting,SQL,40
+IT Mgmt & Consulting,JIRA / Agile,40
+IT Mgmt & Consulting,Networking,28
+IT Mgmt & Consulting,Excel,27
+IT Support,Networking,5
+IT Support,JIRA / Agile,3
+IT Support,Linux,2
+IT Support,Visualisasi Data,1
+IT Support,Storytelling / Presentasi,1
+Infra & Network,Docker / K8s,56
+Infra & Network,CI/CD,53
+Infra & Network,Cloud (AWS/GCP/Azure),51
+Infra & Network,Linux,41
+Infra & Network,Python,39
+Security,Networking,8
+Security,Python,5
+Security,Linux,5
+Security,Docker / K8s,5
+Security,Cloud (AWS/GCP/Azure),5
+Software Engineering,API / Integrasi,256
+Software Engineering,JavaScript/TypeScript,225
+Software Engineering,SQL,201
+Software Engineering,Git,184
+Software Engineering,CI/CD,134

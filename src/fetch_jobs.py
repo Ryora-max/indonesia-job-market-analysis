@@ -38,8 +38,21 @@ QUERIES = [
     "insight", "database analyst", "quantitative analyst",
     "strategy analyst", "business data", "data analyst intern",
     "bi analyst", "analytics", "big data analyst",
+    # --- segmen IT umum ---
+    "software engineer", "web developer", "frontend developer",
+    "backend developer", "fullstack developer", "mobile developer",
+    "android developer", "ios developer", "flutter",
+    "devops", "site reliability", "system administrator",
+    "network engineer", "it support", "helpdesk",
+    "qa engineer", "quality assurance", "software tester",
+    "security engineer", "cyber security", "ui ux",
+    "it project manager", "erp consultant", "sap consultant",
+    "sistem informasi", "it auditor", "database administrator",
+    "cloud engineer", "infrastructure engineer", "it consultant",
+    "solution architect", "technical support", "it officer",
+    "programmer", "software developer", "golang", "python developer",
 ]
-PER_PAGE, MAX_PAGES = 50, 30          # maks 1500 lowongan per kata kunci
+PER_PAGE, MAX_PAGES = 50, 20          # maks 1000 lowongan per kata kunci
 
 
 def fetch(query, offset):

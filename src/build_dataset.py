@@ -64,7 +64,7 @@ EDU_MAP = {200: "SMA/SMK", 350: "D1–D3", 400: "D3", 450: "D3/D4",
 # Keluarga peran dari judul — urutan penting (pola spesifik dulu)
 ROLE_RULES = [
     ("Data Scientist", r"data\s*scien|machine learning|\bml\b engineer"),
-    ("Data Engineer", r"data\s*engineer|data platform|data pipeline|\betl\b developer|big data"),
+    ("Data Engineer", r"data\s*engineer|data platform|data pipeline|\betl\b developer|big data|\bdwh\b|data warehouse|\bai\b\s*ml\b|ml operator|ml engineer"),
     ("BI / Analytics", r"business intelligence|\bbi\b analyst|analytics engineer|data insight"),
     ("Data Analyst", r"data\s*analyst|analis\s*data|data quality|big data analyst|data officer|data governance|data protection|people analytics"),
     ("Business / System Analyst", r"business analyst|analis\s*bisnis|system analyst|it ba\b|\bit business\b|odoo analyst"),
@@ -74,14 +74,56 @@ ROLE_RULES = [
     ("Product Analyst", r"product analyst"),
     ("Marketing Analyst", r"marketing analyst|marketing.*analyst|digital marketing|performance marketing"),
     ("Financial Analyst", r"financial analyst|financ.*analyst|accounting analyst|tax analyst"),
+    # --- keluarga IT ---
+    ("QA & Testing", r"qa engineer|quality assurance|software tester|\bqa\b|sdet|automation test|test engineer|\btester\b"),
+    ("Security", r"cyber|security|penetration|soc analyst|information security|it security"),
+    ("DevOps & Infra", r"devsecops|secops|devops|sre|site reliability|cloud engineer|infrastructure|system administrator|sysadmin|network engineer|noc|it infrastructure"),
+    ("IT Support", r"it support|helpdesk|technical support|it officer|it staff|service desk|desktop support|it operation"),
+    ("UI/UX Design", r"ui.?ux|ux designer|ui designer|product designer|figma"),
+    ("ERP & IT Consulting", r"\berp\b|\bsap\b|odoo|it consultant|solution architect|it auditor|it project|technical consultant|functional consultant"),
+    ("DBA / Database", r"database administrator|\bdba\b|database engineer"),
+    ("Software Engineering", r"software|developer|programmer|front.?end|back.?end|full.?stack|web dev|mobile|android|ios|flutter|golang|react|node\.js|python dev|java dev|application|system engineer|product engineer|platform engineer|coder|game dev"),
 ]
-TITLE_RELEVANT = re.compile(
+DATA_FAMILIES = {"Data Analyst", "Data Scientist", "Data Engineer",
+                 "BI / Analytics", "MIS / Reporting", "Product Analyst",
+                 "Marketing Analyst", "Financial Analyst",
+                 "Risk & Credit Analyst", "Ops & Domain Analyst",
+                 "Analyst Lainnya"}
+DOMAIN_MAP = {
+    "Business / System Analyst": "IT Mgmt & Consulting",
+    "ERP & IT Consulting": "IT Mgmt & Consulting",
+    "QA & Testing": "Software Engineering",
+    "Software Engineering": "Software Engineering",
+    "DevOps & Infra": "Infra & Network",
+    "Security": "Security",
+    "IT Support": "IT Support",
+    "UI/UX Design": "Design (UI/UX)",
+    "DBA / Database": "Infra & Network",
+    "IT Lainnya": "IT Lainnya",
+    "Adjacent": "Adjacent (non-IT)",
+}
+TITLE_ANALYST = re.compile(
     r"analyst|analis|analytic|data|intelligence|scientist|\bbi\b|\betl\b|"
     r"\bmis\b|reporting|dashboard|kpi|analisa",
     re.I)
+TITLE_IT = re.compile(
+    r"developer|programmer|devops|qa engineer|tester|sysadmin|"
+    r"system administrator|network engineer|cloud engineer|"
+    r"security engineer|cyber|ui.?ux|ux designer|ui designer|"
+    r"frontend|backend|fullstack|mobile developer|android|"
+    r"ios developer|flutter|golang|\bit support\b|helpdesk|"
+    r"technical support|\berp\b|\bsap\b|database administrator|"
+    r"\bdba\b|site reliability|solution architect|it auditor|"
+    r"software|it consultant|it officer|it staff|it operation|"
+    r"it project manager",
+    re.I)
 CORE_SKILLS = {"SQL", "Python", "R", "Excel", "Power BI", "Tableau",
                "Looker / Data Studio", "BigQuery", "Statistik",
-               "Visualisasi Data", "Google Sheets", "ETL / Data Pipeline"}
+               "Visualisasi Data", "Google Sheets", "ETL / Data Pipeline",
+               "JavaScript/TypeScript", "Docker / K8s", "Linux",
+               "API / Integrasi", "Java", "PHP / Laravel", "React",
+               "Node.js", "CI/CD", "Flutter", "Networking",
+               "Testing / QA Tools"}
 SENIOR_RE = re.compile(r"senior|\bsr\b|lead|head|manager|supervisor|principal|chief", re.I)
 JUNIOR_RE = re.compile(r"junior|\bjr\b|fresh|intern|magang|trainee|entry", re.I)
 
@@ -109,6 +151,23 @@ SKILLS = {
     "JIRA / Agile": r"\bjira\b|agile|scrum",
     "NoSQL / MongoDB": r"mongodb|nosql",
     "ERP / SAP": r"\berp\b|\bsap\b|odoo",
+    # --- skill IT ---
+    "JavaScript/TypeScript": r"javascript|typescript|\bjs\b",
+    "React": r"\breact\b|reactjs|react\.js|react native",
+    "Node.js": r"node\.?js",
+    "Java": r"\bjava\b|spring\s*boot|spring framework",
+    "PHP / Laravel": r"\bphp\b|laravel|codeigniter",
+    "Docker / K8s": r"docker|kubernetes|\bk8s\b|container",
+    "Linux": r"\blinux\b|ubuntu|centos|debian|red hat",
+    "Flutter": r"\bflutter\b|\bdart\b",
+    "Golang": r"golang|go developer",
+    "API / Integrasi": r"\bapi\b|restful|rest api|graphql|microservice",
+    "CI/CD": r"ci/cd|cicd|jenkins|gitlab ci|github actions|continuous integration|continuous deployment",
+    "Testing / QA Tools": r"selenium|automation test|unit test|test case|postman|cypress|katalon",
+    "Networking": r"network(ing)? engineer|jaringan|mikrotik|cisco|tcp/ip|lan\b|wan\b|firewall",
+    "Figma / Design Tool": r"figma|adobe|photoshop|illustrator|sketch",
+    "CMS / WordPress": r"wordpress|\bcms\b",
+    "Firebase / Supabase": r"firebase|supabase",
 }
 
 
@@ -125,7 +184,13 @@ def classify_role(title):
     for fam, pat in ROLE_RULES:
         if re.search(pat, t):
             return fam
-    return "Analyst Lainnya"
+    return None
+
+
+def family_domain(fam):
+    if fam in DATA_FAMILIES:
+        return "Data & Analytics"
+    return DOMAIN_MAP.get(fam, "IT Lainnya")
 
 
 def classify_seniority(title, exp_code):
@@ -181,16 +246,23 @@ def kalibrr_rows(jobs):
         if (j.get("salary_currency") or "IDR") != "IDR":
             gaji_min = gaji_max = None
         skills = extract_skills(teks)
-        judul_match = bool(TITLE_RELEVANT.search(title))
+        a_match = bool(TITLE_ANALYST.search(title))
+        it_match = bool(TITLE_IT.search(title))
         n_core = len(CORE_SKILLS & set(skills))
-        if not judul_match and n_core < 2:
+        if not (a_match or it_match) and n_core < 2:
             continue                     # buang lowongan tak relevan
+        fam = classify_role(title)
+        if fam is None:
+            fam = ("Analyst Lainnya" if a_match else
+                    "IT Lainnya" if it_match else "Adjacent")
         rows.append({
             "id_lowongan": f"kb_{j['id']}",
             "sumber": "kalibrr",
             "judul": strip_html(title),
-            "peran_analyst": judul_match,
-            "role_family": classify_role(title),
+            "peran_analyst": a_match,
+            "peran_it": it_match,
+            "domain": family_domain(fam),
+            "role_family": fam,
             "senioritas": classify_seniority(title, exp),
             "perusahaan": j.get("company_name") or
                 (j.get("company") or {}).get("name"),
@@ -221,10 +293,15 @@ def linkedin_rows(jobs):
         teks = strip_html(j.get("description_html") or "")
         title = j.get("name") or ""
         skills = extract_skills(teks)
-        judul_match = bool(TITLE_RELEVANT.search(title))
+        a_match = bool(TITLE_ANALYST.search(title))
+        it_match = bool(TITLE_IT.search(title))
         n_core = len(CORE_SKILLS & set(skills))
-        if not judul_match and n_core < 2:
+        if not (a_match or it_match) and n_core < 2:
             continue
+        fam = classify_role(title)
+        if fam is None:
+            fam = ("Analyst Lainnya" if a_match else
+                    "IT Lainnya" if it_match else "Adjacent")
         kota, prov = parse_li_loc(j.get("location"))
         crit = j.get("criteria") or {}
         lid = f"li_{j['id']}"
@@ -233,8 +310,10 @@ def linkedin_rows(jobs):
             "id_lowongan": lid,
             "sumber": "linkedin",
             "judul": strip_html(title),
-            "peran_analyst": judul_match,
-            "role_family": classify_role(title),
+            "peran_analyst": a_match,
+            "peran_it": it_match,
+            "domain": family_domain(fam),
+            "role_family": fam,
             "senioritas": LI_SEN.get(
                 (crit.get("Seniority level") or "").lower(),
                 classify_seniority(title, 200)),

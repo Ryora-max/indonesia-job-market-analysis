@@ -18,10 +18,19 @@ GROUP BY s.skill
 ORDER BY n DESC;
 
 -- 03 Distribusi keluarga peran
-SELECT role_family, COUNT(*) AS n,
+SELECT role_family, domain, COUNT(*) AS n,
        ROUND(100.0 * COUNT(*) / (SELECT COUNT(*) FROM lowongan), 1) AS persen
 FROM lowongan
-GROUP BY role_family
+GROUP BY role_family, domain
+ORDER BY n DESC;
+
+-- 03b Segmen/domain pasar kerja
+SELECT domain, COUNT(*) AS n,
+       ROUND(100.0 * COUNT(*) / (SELECT COUNT(*) FROM lowongan), 1) AS persen,
+       ROUND(100.0 * SUM(fresh_grad_ok) / COUNT(*), 1) AS pct_fresh,
+       ROUND(100.0 * SUM(remote) / COUNT(*), 1) AS pct_remote
+FROM lowongan
+GROUP BY domain
 ORDER BY n DESC;
 
 -- 04 Provinsi dengan permintaan terbanyak
@@ -102,3 +111,20 @@ SELECT substr(tgl_posting, 1, 7) AS bulan, COUNT(*) AS n
 FROM lowongan
 GROUP BY bulan
 ORDER BY bulan;
+
+-- 13 Top-5 skill per domain (CTE + window)
+WITH ranked AS (
+    SELECT l.domain, s.skill, COUNT(*) AS n,
+           ROW_NUMBER() OVER (PARTITION BY l.domain ORDER BY COUNT(*) DESC) AS rk
+    FROM job_skill s
+    JOIN lowongan l ON l.id_lowongan = s.id_lowongan
+    GROUP BY l.domain, s.skill
+)
+SELECT domain, skill, n FROM ranked WHERE rk <= 5 ORDER BY domain, rk;
+
+-- 14 Komposisi platform per domain (Kalibrr vs LinkedIn)
+SELECT domain, sumber, COUNT(*) AS n,
+       ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (PARTITION BY domain), 1) AS persen_dalam_domain
+FROM lowongan
+GROUP BY domain, sumber
+ORDER BY domain, sumber;

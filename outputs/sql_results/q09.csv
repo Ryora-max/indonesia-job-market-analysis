@@ -1,29 +1,59 @@
 senioritas,role_family,n
-Junior / Entry,Analyst Lainnya,10
+Junior / Entry,Software Engineering,19
+Junior / Entry,Adjacent,12
+Junior / Entry,QA & Testing,9
 Junior / Entry,Data Analyst,5
+Junior / Entry,Analyst Lainnya,5
+Junior / Entry,UI/UX Design,3
+Junior / Entry,Security,3
 Junior / Entry,MIS / Reporting,2
+Junior / Entry,IT Support,2
+Junior / Entry,DevOps & Infra,2
+Junior / Entry,Data Engineer,2
 Junior / Entry,Business / System Analyst,2
 Junior / Entry,Risk & Credit Analyst,1
+Junior / Entry,ERP & IT Consulting,1
 Junior / Entry,Data Scientist,1
+Junior / Entry,DBA / Database,1
 Junior / Entry,BI / Analytics,1
-Mid,Analyst Lainnya,126
-Mid,Business / System Analyst,58
-Mid,Data Engineer,45
-Mid,Data Analyst,37
-Mid,Data Scientist,24
-Mid,Ops & Domain Analyst,13
-Mid,MIS / Reporting,11
-Mid,BI / Analytics,11
-Mid,Marketing Analyst,5
-Mid,Financial Analyst,3
+Mid,Software Engineering,238
+Mid,Adjacent,194
+Mid,DevOps & Infra,85
+Mid,Analyst Lainnya,75
+Mid,Business / System Analyst,73
+Mid,ERP & IT Consulting,62
+Mid,Data Engineer,52
+Mid,QA & Testing,51
+Mid,IT Support,46
+Mid,Data Analyst,46
+Mid,Security,31
+Mid,Data Scientist,29
+Mid,UI/UX Design,24
+Mid,Ops & Domain Analyst,18
+Mid,MIS / Reporting,15
+Mid,BI / Analytics,12
+Mid,Marketing Analyst,8
+Mid,Financial Analyst,6
+Mid,DBA / Database,6
 Mid,Risk & Credit Analyst,2
 Mid,Product Analyst,2
-Senior / Lead,Analyst Lainnya,42
-Senior / Lead,Data Scientist,19
-Senior / Lead,Data Engineer,16
+Senior / Lead,Software Engineering,104
+Senior / Lead,Adjacent,45
+Senior / Lead,ERP & IT Consulting,40
+Senior / Lead,Analyst Lainnya,31
+Senior / Lead,DevOps & Infra,24
+Senior / Lead,QA & Testing,20
+Senior / Lead,Data Scientist,20
+Senior / Lead,Security,18
+Senior / Lead,Data Engineer,17
 Senior / Lead,Data Analyst,16
-Senior / Lead,Business / System Analyst,9
+Senior / Lead,Business / System Analyst,11
+Senior / Lead,IT Support,7
 Senior / Lead,BI / Analytics,7
+Senior / Lead,UI/UX Design,5
+Senior / Lead,MIS / Reporting,4
+Senior / Lead,DBA / Database,3
 Senior / Lead,Risk & Credit Analyst,2
-Senior / Lead,Ops & Domain Analyst,1
+Senior / Lead,Ops & Domain Analyst,2
 Senior / Lead,Marketing Analyst,1
+Senior / Lead,Financial Analyst,1
