@@ -8,7 +8,7 @@
 
 Portofolio Data Analyst: analisis **pasar kerja IT & data Indonesia** dari
 **data riil** — ~3.500 lowongan diambil dari API publik Kalibrr + LinkedIn
-guest API, disaring menjadi **1.524 lowongan relevan** yang mencakup
+guest API, disaring menjadi **1.630 lowongan relevan** yang mencakup
 seluruh ekosistem IT: data/analytics, software engineering, infra/DevOps,
 security, QA, IT support, UI/UX, ERP/konsultasi, hingga peran
 transformasi/change digital.
@@ -32,15 +32,15 @@ transformasi/change digital.
 
 ## Temuan kunci (dihitung via `src/key_metrics.py`)
 
-- **1.524 lowongan relevan** dari ~3.500 hasil fetch dua platform —
+- **1.630 lowongan relevan** dari ~3.500 hasil fetch dua platform —
   filtering adalah bagian terbesar pekerjaan nyata karena pencarian
   job board itu noisy.
 - **Delapan domain pasar:** Software Engineering (29%) terbesar, diikuti
-  Data & Analytics (25%), IT Mgmt & Consulting (12%), Infra & Network
-  (8%), IT Support, Security, dan UI/UX.
-- **Skill teratas:** SQL (34%), Python (24%), API/Integrasi (23%),
-  Networking (22%), Excel (18%), Git & JavaScript (17%).
-- **Dua platform = dua segmen pasar berbeda.** LinkedIn membawa ~75%
+  Data & Analytics (24%), IT Mgmt & Consulting (12%), Infra & Network
+  (8%), Security, IT Support, dan UI/UX.
+- **Skill teratas:** SQL (36%), Networking (30%), Python (26%),
+  API/Integrasi (25%), Excel & Cloud (19%), JIRA & JavaScript (18%).
+- **Dua platform = dua segmen pasar berbeda.** LinkedIn membawa ~76%
   lowongan (segmen enterprise/multinasional); Kalibrr ~25% (UMKM/lokal,
   banyak peran MIS/reporting). Komposisi domain per platform berbeda
   signifikan (lihat `outputs/sql_results/14_*`).
@@ -48,7 +48,7 @@ transformasi/change digital.
   terpusat di ibu kota.
 - **Hanya 3% lowongan menampilkan gaji** (median max Rp10 jt/bln) →
   transparansi gaji rendah; analisis gaji bias ke perusahaan transparan.
-- **Remote murni ~1%**, hybrid ~3% → masih on-site centric; hanya ~10%
+- **Remote murni ~1%**, hybrid ~3% → masih on-site centric; hanya ~11%
   yang eksplisit fresh-grad friendly; 71% lowongan menargetkan level Mid.
 
 ## Struktur

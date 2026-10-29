@@ -1,11 +1,11 @@
 senioritas,role_family,n
 Junior / Entry,Software Engineering,19
-Junior / Entry,Adjacent,12
-Junior / Entry,QA & Testing,9
+Junior / Entry,Adjacent,13
+Junior / Entry,QA & Testing,10
+Junior / Entry,Analyst Lainnya,6
 Junior / Entry,Data Analyst,5
-Junior / Entry,Analyst Lainnya,5
+Junior / Entry,Security,4
 Junior / Entry,UI/UX Design,3
-Junior / Entry,Security,3
 Junior / Entry,MIS / Reporting,2
 Junior / Entry,IT Support,2
 Junior / Entry,DevOps & Infra,2
@@ -16,17 +16,17 @@ Junior / Entry,ERP & IT Consulting,1
 Junior / Entry,Data Scientist,1
 Junior / Entry,DBA / Database,1
 Junior / Entry,BI / Analytics,1
-Mid,Software Engineering,238
-Mid,Adjacent,194
-Mid,DevOps & Infra,85
+Mid,Software Engineering,253
+Mid,Adjacent,230
+Mid,DevOps & Infra,89
+Mid,Business / System Analyst,75
 Mid,Analyst Lainnya,75
-Mid,Business / System Analyst,73
-Mid,ERP & IT Consulting,62
+Mid,ERP & IT Consulting,64
+Mid,QA & Testing,58
 Mid,Data Engineer,52
-Mid,QA & Testing,51
-Mid,IT Support,46
+Mid,IT Support,47
 Mid,Data Analyst,46
-Mid,Security,31
+Mid,Security,40
 Mid,Data Scientist,29
 Mid,UI/UX Design,24
 Mid,Ops & Domain Analyst,18
@@ -38,19 +38,19 @@ Mid,DBA / Database,6
 Mid,Risk & Credit Analyst,2
 Mid,Product Analyst,2
 Senior / Lead,Software Engineering,104
-Senior / Lead,Adjacent,45
+Senior / Lead,Adjacent,63
 Senior / Lead,ERP & IT Consulting,40
 Senior / Lead,Analyst Lainnya,31
-Senior / Lead,DevOps & Infra,24
-Senior / Lead,QA & Testing,20
+Senior / Lead,DevOps & Infra,26
+Senior / Lead,QA & Testing,23
+Senior / Lead,Security,20
 Senior / Lead,Data Scientist,20
-Senior / Lead,Security,18
 Senior / Lead,Data Engineer,17
 Senior / Lead,Data Analyst,16
 Senior / Lead,Business / System Analyst,11
 Senior / Lead,IT Support,7
 Senior / Lead,BI / Analytics,7
-Senior / Lead,UI/UX Design,5
+Senior / Lead,UI/UX Design,6
 Senior / Lead,MIS / Reporting,4
 Senior / Lead,DBA / Database,3
 Senior / Lead,Risk & Credit Analyst,2

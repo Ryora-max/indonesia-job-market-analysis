@@ -1293,6 +1293,54 @@ kb_274957,SQL
 kb_274957,Git
 kb_274957,JavaScript/TypeScript
 kb_274957,API / Integrasi
+kb_271442,SQL
+kb_271442,Excel
+kb_271442,Google Sheets
+kb_271442,Power BI
+kb_271442,Tableau
+kb_271442,Looker / Data Studio
+kb_271442,Statistik
+kb_274977,Excel
+kb_274977,JIRA / Agile
+kb_267386,Excel
+kb_267386,Storytelling / Presentasi
+kb_267386,Networking
+kb_275000,Excel
+kb_275000,Google Sheets
+kb_275000,Networking
+kb_271269,Networking
+kb_274981,Excel
+kb_274981,Google Sheets
+kb_274981,Storytelling / Presentasi
+kb_274981,Networking
+kb_269898,SQL
+kb_269898,Python
+kb_269898,NoSQL / MongoDB
+kb_269898,Docker / K8s
+kb_256577,Cloud (AWS/GCP/Azure)
+kb_256577,Airflow / Orchestrasi
+kb_256577,Docker / K8s
+kb_256577,Networking
+kb_274984,SQL
+kb_274984,Cloud (AWS/GCP/Azure)
+kb_274984,Git
+kb_274984,API / Integrasi
+kb_274984,CI/CD
+kb_274984,Testing / QA Tools
+kb_274974,Excel
+kb_274974,Visualisasi Data
+kb_274975,Visualisasi Data
+kb_274975,Storytelling / Presentasi
+kb_274975,Networking
+kb_274975,Figma / Design Tool
+kb_275005,Excel
+kb_275005,Storytelling / Presentasi
+kb_275005,ERP / SAP
+kb_275005,Networking
+kb_275006,SQL
+kb_275006,Python
+kb_275006,NoSQL / MongoDB
+kb_275006,Docker / K8s
 li_4465019540,SQL
 li_4465019540,Excel
 li_4465019540,Power BI
@@ -5946,3 +5994,890 @@ li_4479155579,JIRA / Agile
 li_4479155579,JavaScript/TypeScript
 li_4479155579,API / Integrasi
 li_4479155579,Testing / QA Tools
+li_4476314021,SQL
+li_4476314021,Flutter
+li_4476314021,API / Integrasi
+li_4476314021,CI/CD
+li_4476314021,Testing / QA Tools
+li_4439540355,JIRA / Agile
+li_4439540355,CI/CD
+li_4439540355,Testing / QA Tools
+li_4283954656,JIRA / Agile
+li_4283954656,Docker / K8s
+li_4283954656,Testing / QA Tools
+li_4480168503,Testing / QA Tools
+li_4477921467,Excel
+li_4481687205,Cloud (AWS/GCP/Azure)
+li_4481687205,JIRA / Agile
+li_4481687205,ERP / SAP
+li_4481687205,API / Integrasi
+li_4481687205,Testing / QA Tools
+li_4474578945,SQL
+li_4474578945,Python
+li_4474578945,JIRA / Agile
+li_4474578945,NoSQL / MongoDB
+li_4474578945,JavaScript/TypeScript
+li_4474578945,Java
+li_4474578945,API / Integrasi
+li_4474578945,CI/CD
+li_4474578945,Testing / QA Tools
+li_4459180153,Git
+li_4459180153,JavaScript/TypeScript
+li_4459180153,API / Integrasi
+li_4459180153,Testing / QA Tools
+li_4483683827,Python
+li_4483683827,Git
+li_4483683827,JIRA / Agile
+li_4483683827,API / Integrasi
+li_4483683827,CI/CD
+li_4483683827,Testing / QA Tools
+li_4447691422,SQL
+li_4447691422,Python
+li_4447691422,BigQuery
+li_4447691422,Cloud (AWS/GCP/Azure)
+li_4447691422,ETL / Data Pipeline
+li_4447691422,Statistik
+li_4447691422,Git
+li_4447691422,JavaScript/TypeScript
+li_4447691422,Java
+li_4447691422,API / Integrasi
+li_4447691422,CI/CD
+li_4483238952,CI/CD
+li_4483238952,Testing / QA Tools
+li_4482497265,API / Integrasi
+li_4482497265,Testing / QA Tools
+li_4482497265,Figma / Design Tool
+li_4482497265,CMS / WordPress
+li_4481673212,Excel
+li_4481673212,Statistik
+li_4481673212,JIRA / Agile
+li_4477283509,Testing / QA Tools
+li_4479812216,SQL
+li_4479812216,JIRA / Agile
+li_4479812216,Testing / QA Tools
+li_4444880363,SQL
+li_4444880363,Python
+li_4444880363,Cloud (AWS/GCP/Azure)
+li_4444880363,JavaScript/TypeScript
+li_4444880363,PHP / Laravel
+li_4444880363,API / Integrasi
+li_4444880363,CI/CD
+li_4444880363,Testing / QA Tools
+li_4444880363,Networking
+li_4481146724,SQL
+li_4481146724,JIRA / Agile
+li_4481146724,API / Integrasi
+li_4464534454,JIRA / Agile
+li_4464534454,Testing / QA Tools
+li_4481839991,SQL
+li_4481839991,JIRA / Agile
+li_4481839991,API / Integrasi
+li_4481839991,Testing / QA Tools
+li_4475148619,JIRA / Agile
+li_4475148619,Testing / QA Tools
+li_4285703571,JIRA / Agile
+li_4285703571,Testing / QA Tools
+li_4474239400,SQL
+li_4474239400,Excel
+li_4462143490,Python
+li_4462143490,JIRA / Agile
+li_4462143490,JavaScript/TypeScript
+li_4462143490,Java
+li_4462143490,API / Integrasi
+li_4462143490,CI/CD
+li_4462143490,Testing / QA Tools
+li_4462143490,Networking
+li_4478196851,Statistik
+li_4481858928,Excel
+li_4481858928,Spark / Hadoop
+li_4481858928,Visualisasi Data
+li_4481858928,ERP / SAP
+li_4474118277,Excel
+li_4474118277,Networking
+li_4482645852,Git
+li_4482645852,JavaScript/TypeScript
+li_4482645852,React
+li_4482645852,API / Integrasi
+li_4482645852,CI/CD
+li_4482645852,Testing / QA Tools
+li_4444989830,Excel
+li_4444989830,Networking
+li_4480777519,Cloud (AWS/GCP/Azure)
+li_4472879676,JIRA / Agile
+li_4472879676,ERP / SAP
+li_4397759427,Linux
+li_4479268374,Excel
+li_4479268374,Google Sheets
+li_4448489094,Linux
+li_4463180665,Storytelling / Presentasi
+li_4463180665,ERP / SAP
+li_4463180665,Networking
+li_4416642896,Linux
+li_4416642896,Networking
+li_4465725424,SQL
+li_4465725424,PHP / Laravel
+li_4476756085,Google Sheets
+li_4476756085,Networking
+li_4138065011,Networking
+li_4483551547,Networking
+li_4481262966,Networking
+li_4378982426,Linux
+li_4464510327,Storytelling / Presentasi
+li_4464510327,Networking
+li_4474185533,SQL
+li_4474185533,Git
+li_4474185533,JavaScript/TypeScript
+li_4474185533,PHP / Laravel
+li_4474185533,API / Integrasi
+li_4474185533,Testing / QA Tools
+li_4474185533,CMS / WordPress
+li_4479736708,SQL
+li_4479736708,JIRA / Agile
+li_4479736708,PHP / Laravel
+li_4479736708,Linux
+li_4479736708,CMS / WordPress
+li_4287381069,ERP / SAP
+li_4438313531,Java
+li_4474664490,Networking
+li_4473739703,JIRA / Agile
+li_4459352569,SQL
+li_4459352569,Networking
+li_4446498310,Networking
+li_4470833095,Storytelling / Presentasi
+li_4470833095,Networking
+li_4482802831,SQL
+li_4482802831,Linux
+li_4482802831,Figma / Design Tool
+li_4472706353,Excel
+li_4457684760,JIRA / Agile
+li_4457684760,Networking
+li_4482412860,Excel
+li_4456728743,Java
+li_4456728743,Networking
+li_4483538325,Storytelling / Presentasi
+li_4477261495,SQL
+li_4477261495,Cloud (AWS/GCP/Azure)
+li_4477261495,API / Integrasi
+li_4477261495,CI/CD
+li_4409273853,ERP / SAP
+li_4409273853,Networking
+li_4478793188,Excel
+li_4478793188,Networking
+li_4484100010,API / Integrasi
+li_4484100010,Testing / QA Tools
+li_4483681890,Storytelling / Presentasi
+li_4483681890,Networking
+li_4476250466,Cloud (AWS/GCP/Azure)
+li_4476250466,Networking
+li_4440652121,SQL
+li_4440652121,JIRA / Agile
+li_4440652121,PHP / Laravel
+li_4467978806,SQL
+li_4467978806,Python
+li_4467978806,Cloud (AWS/GCP/Azure)
+li_4467978806,Airflow / Orchestrasi
+li_4467978806,ETL / Data Pipeline
+li_4467978806,Visualisasi Data
+li_4467978806,JIRA / Agile
+li_4468751875,SQL
+li_4468751875,Cloud (AWS/GCP/Azure)
+li_4468751875,JIRA / Agile
+li_4468751875,JavaScript/TypeScript
+li_4468751875,React
+li_4468751875,Node.js
+li_4468751875,Java
+li_4468751875,API / Integrasi
+li_4483139860,SQL
+li_4483139860,Python
+li_4483139860,Machine Learning
+li_4483139860,JavaScript/TypeScript
+li_4478184964,Excel
+li_4463133570,Google Sheets
+li_4463133570,ERP / SAP
+li_4463133570,Networking
+li_4317431458,Tableau
+li_4317431458,Linux
+li_4463144436,Linux
+li_4463144436,API / Integrasi
+li_4463144436,Networking
+li_4484250144,Linux
+li_4484250144,Networking
+li_4467964914,SQL
+li_4467964914,Python
+li_4467964914,Cloud (AWS/GCP/Azure)
+li_4467964914,Airflow / Orchestrasi
+li_4467964914,ETL / Data Pipeline
+li_4467964914,Visualisasi Data
+li_4467964914,JIRA / Agile
+li_4386896319,Networking
+li_4461979887,SQL
+li_4461979887,Visualisasi Data
+li_4461979887,JIRA / Agile
+li_4431800432,Excel
+li_4431800432,JIRA / Agile
+li_4431800432,ERP / SAP
+li_4464095567,ERP / SAP
+li_4464095567,Networking
+li_4478511785,Cloud (AWS/GCP/Azure)
+li_4483869547,Docker / K8s
+li_4483869547,Linux
+li_4299313857,Figma / Design Tool
+li_4479962465,Visualisasi Data
+li_4479962465,Networking
+li_4481635816,JavaScript/TypeScript
+li_4481635816,Figma / Design Tool
+li_4343246080,Figma / Design Tool
+li_4484024301,Networking
+li_4484024301,Figma / Design Tool
+li_4484027137,Networking
+li_4484027137,Figma / Design Tool
+li_4461976148,Figma / Design Tool
+li_4477523517,Statistik
+li_4477523517,Storytelling / Presentasi
+li_4477523517,Figma / Design Tool
+li_4439008879,Excel
+li_4439008879,JavaScript/TypeScript
+li_4439008879,Figma / Design Tool
+li_4483600089,Excel
+li_4483600089,Figma / Design Tool
+li_4440053170,ERP / SAP
+li_4440053170,React
+li_4440053170,Networking
+li_4440053170,Figma / Design Tool
+li_4481399610,Figma / Design Tool
+li_4484469581,Figma / Design Tool
+li_4428243354,JIRA / Agile
+li_4428243354,Figma / Design Tool
+li_4451093479,Storytelling / Presentasi
+li_4451093479,Figma / Design Tool
+li_4285704285,JIRA / Agile
+li_4285704285,JavaScript/TypeScript
+li_4285704285,Figma / Design Tool
+li_4461797676,Looker / Data Studio
+li_4461797676,Visualisasi Data
+li_4461797676,Networking
+li_4461797676,Figma / Design Tool
+li_4473132025,Storytelling / Presentasi
+li_4473132025,Networking
+li_4473132025,Figma / Design Tool
+li_4441988163,Figma / Design Tool
+li_4461707562,Networking
+li_4461707562,Figma / Design Tool
+li_4469858132,Figma / Design Tool
+li_4451178436,Visualisasi Data
+li_4451178436,API / Integrasi
+li_4462400308,Networking
+li_4462400308,Figma / Design Tool
+li_4473841528,Storytelling / Presentasi
+li_4473841528,JavaScript/TypeScript
+li_4473841528,React
+li_4473841528,Figma / Design Tool
+li_4444874376,Storytelling / Presentasi
+li_4444874376,JavaScript/TypeScript
+li_4444874376,PHP / Laravel
+li_4444874376,API / Integrasi
+li_4444874376,Networking
+li_4444874376,Figma / Design Tool
+li_4479806082,Figma / Design Tool
+li_4378986350,Networking
+li_4378986350,Figma / Design Tool
+li_4443951310,Git
+li_4443951310,JIRA / Agile
+li_4443951310,Figma / Design Tool
+li_4464639915,Flutter
+li_4464639915,Figma / Design Tool
+li_4397908600,JIRA / Agile
+li_4397908600,Figma / Design Tool
+li_4482485498,Figma / Design Tool
+li_4444881341,JIRA / Agile
+li_4444881341,JavaScript/TypeScript
+li_4444881341,PHP / Laravel
+li_4444881341,API / Integrasi
+li_4444881341,Networking
+li_4458872839,Excel
+li_4458872839,Google Sheets
+li_4458872839,Testing / QA Tools
+li_4458872839,Figma / Design Tool
+li_4448962126,JavaScript/TypeScript
+li_4448962126,Node.js
+li_4475529840,SQL
+li_4475529840,Excel
+li_4475529840,Google Sheets
+li_4475529840,Tableau
+li_4475529840,Looker / Data Studio
+li_4475529840,Statistik
+li_4475529840,Firebase / Supabase
+li_4481949340,JavaScript/TypeScript
+li_4481949340,Node.js
+li_4481949340,Docker / K8s
+li_4464557325,Python
+li_4464557325,Airflow / Orchestrasi
+li_4464557325,API / Integrasi
+li_4464557325,Networking
+li_4424581184,API / Integrasi
+li_4483862405,Networking
+li_4482778290,Docker / K8s
+li_4482778290,Networking
+li_4449239202,Networking
+li_4478176489,Python
+li_4478176489,Cloud (AWS/GCP/Azure)
+li_4478176489,Linux
+li_4476239935,Linux
+li_4476239935,Networking
+li_4474122667,Python
+li_4474122667,Cloud (AWS/GCP/Azure)
+li_4474122667,Linux
+li_4474122667,Networking
+li_4476277013,Cloud (AWS/GCP/Azure)
+li_4476277013,Networking
+li_4479958804,Python
+li_4479958804,Power BI
+li_4479958804,Cloud (AWS/GCP/Azure)
+li_4479958804,Visualisasi Data
+li_4479958804,Docker / K8s
+li_4479958804,API / Integrasi
+li_4464177785,SQL
+li_4464177785,Python
+li_4464177785,ETL / Data Pipeline
+li_4483882351,Linux
+li_4483882351,API / Integrasi
+li_4456405375,Networking
+li_4468486752,Python
+li_4468486752,JavaScript/TypeScript
+li_4468486752,Docker / K8s
+li_4468486752,Golang
+li_4468486752,API / Integrasi
+li_4468486752,CI/CD
+li_4436194486,Python
+li_4436194486,Cloud (AWS/GCP/Azure)
+li_4436194486,JIRA / Agile
+li_4436194486,Linux
+li_4436194486,Networking
+li_4412155032,Docker / K8s
+li_4412155032,Linux
+li_4412155032,Testing / QA Tools
+li_4478265892,Google Sheets
+li_4478265892,Cloud (AWS/GCP/Azure)
+li_4478265892,Git
+li_4478265892,JIRA / Agile
+li_4483299931,Python
+li_4483299931,API / Integrasi
+li_4475771900,Networking
+li_4409290594,Python
+li_4409290594,Cloud (AWS/GCP/Azure)
+li_4409290594,API / Integrasi
+li_4469989172,Cloud (AWS/GCP/Azure)
+li_4469989172,Networking
+li_4480759800,Python
+li_4480759800,Cloud (AWS/GCP/Azure)
+li_4480759800,JavaScript/TypeScript
+li_4480759800,Docker / K8s
+li_4480759800,CI/CD
+li_4480759800,Networking
+li_4481160279,Cloud (AWS/GCP/Azure)
+li_4481160279,Storytelling / Presentasi
+li_4481160279,Linux
+li_4481160279,API / Integrasi
+li_4481160279,Networking
+li_4477971144,SQL
+li_4477971144,JavaScript/TypeScript
+li_4477971144,Java
+li_4442993387,Python
+li_4442993387,Linux
+li_4480753923,Python
+li_4480753923,Cloud (AWS/GCP/Azure)
+li_4480753923,JavaScript/TypeScript
+li_4480753923,Docker / K8s
+li_4480753923,CI/CD
+li_4480753923,Networking
+li_4447324703,Excel
+li_4447324703,Cloud (AWS/GCP/Azure)
+li_4447324703,Networking
+li_4475898172,Python
+li_4475898172,Airflow / Orchestrasi
+li_4475898172,JIRA / Agile
+li_4475898172,Linux
+li_4475898172,Networking
+li_4475898172,CMS / WordPress
+li_4440945913,Python
+li_4440945913,Cloud (AWS/GCP/Azure)
+li_4440945913,Git
+li_4440945913,JavaScript/TypeScript
+li_4440945913,Java
+li_4440945913,Docker / K8s
+li_4440945913,CI/CD
+li_4477959147,Networking
+li_4483814931,Python
+li_4483814931,JavaScript/TypeScript
+li_4483814931,Java
+li_4483814931,Docker / K8s
+li_4483814931,API / Integrasi
+li_4483814931,CI/CD
+li_4483814931,Testing / QA Tools
+li_4483814931,Networking
+li_4478820982,Python
+li_4478820982,Power BI
+li_4478820982,Cloud (AWS/GCP/Azure)
+li_4478820982,Airflow / Orchestrasi
+li_4478820982,Visualisasi Data
+li_4478820982,JIRA / Agile
+li_4478820982,Docker / K8s
+li_4478820982,API / Integrasi
+li_4436178901,Python
+li_4436178901,Cloud (AWS/GCP/Azure)
+li_4436178901,Networking
+li_4483854091,Python
+li_4483854091,Docker / K8s
+li_4483854091,Linux
+li_4478233922,Google Sheets
+li_4478233922,Cloud (AWS/GCP/Azure)
+li_4478233922,CI/CD
+li_4478233922,Networking
+li_4469849845,Python
+li_4469849845,Google Sheets
+li_4469849845,Linux
+li_4469849845,Networking
+li_4443249889,Python
+li_4443249889,Visualisasi Data
+li_4443249889,JIRA / Agile
+li_4443249889,Docker / K8s
+li_4443249889,Linux
+li_4443249889,Networking
+li_4474665485,Python
+li_4474665485,Linux
+li_4474665485,Networking
+li_4455044393,Cloud (AWS/GCP/Azure)
+li_4455044393,Networking
+li_4484476138,Excel
+li_4484476138,Cloud (AWS/GCP/Azure)
+li_4484476138,JIRA / Agile
+li_4484476138,API / Integrasi
+li_4484476138,Networking
+li_4299309821,Networking
+li_4483819564,Python
+li_4483819564,Networking
+li_4409277524,Python
+li_4409277524,Cloud (AWS/GCP/Azure)
+li_4409277524,Linux
+li_4474250380,Python
+li_4474250380,Linux
+li_4474250380,Networking
+li_4459757908,SQL
+li_4459757908,Excel
+li_4459757908,JavaScript/TypeScript
+li_4459757908,Java
+li_4459757908,Linux
+li_4483697115,Storytelling / Presentasi
+li_4483697115,Docker / K8s
+li_4483697115,Linux
+li_4483697115,Networking
+li_4475521898,Networking
+li_4463048454,Cloud (AWS/GCP/Azure)
+li_4463048454,Visualisasi Data
+li_4483819670,Cloud (AWS/GCP/Azure)
+li_4483819670,Storytelling / Presentasi
+li_4483819670,Linux
+li_4483819670,Networking
+li_4456851765,Python
+li_4456851765,Linux
+li_4456851765,API / Integrasi
+li_4456851765,Networking
+li_4419658029,SQL
+li_4419658029,ERP / SAP
+li_4419658029,Linux
+li_4419658029,API / Integrasi
+li_4477276774,ERP / SAP
+li_4476272234,ERP / SAP
+li_4457007505,ERP / SAP
+li_4400322192,ERP / SAP
+li_4473071847,Storytelling / Presentasi
+li_4473071847,ERP / SAP
+li_4476280119,Excel
+li_4476280119,ERP / SAP
+li_4459522723,ERP / SAP
+li_4481323179,ERP / SAP
+li_4437035227,ERP / SAP
+li_4459505257,ERP / SAP
+li_4436085794,ERP / SAP
+li_4463153146,ERP / SAP
+li_4434834490,ERP / SAP
+li_4479984016,ERP / SAP
+li_4484107003,ERP / SAP
+li_4463152273,ERP / SAP
+li_4481630046,ERP / SAP
+li_4406579730,ERP / SAP
+li_4453420375,ERP / SAP
+li_4482921998,Excel
+li_4482921998,JIRA / Agile
+li_4482921998,ERP / SAP
+li_4467185531,Cloud (AWS/GCP/Azure)
+li_4467185531,ETL / Data Pipeline
+li_4467185531,JIRA / Agile
+li_4475752898,Machine Learning
+li_4475752898,ERP / SAP
+li_4475752898,Networking
+li_4425814524,Spark / Hadoop
+li_4425814524,ERP / SAP
+li_4478750000,ERP / SAP
+li_4482910877,ERP / SAP
+li_4482910877,Networking
+li_4469468505,JIRA / Agile
+li_4469468505,ERP / SAP
+li_4469468505,API / Integrasi
+li_4469468505,Networking
+li_4454488897,SQL
+li_4454488897,Python
+li_4454488897,Visualisasi Data
+li_4454488897,ERP / SAP
+li_4454488897,API / Integrasi
+li_4454488897,CI/CD
+li_4405332971,JIRA / Agile
+li_4405332971,ERP / SAP
+li_4479961808,Cloud (AWS/GCP/Azure)
+li_4479961808,ETL / Data Pipeline
+li_4479961808,ERP / SAP
+li_4479961808,API / Integrasi
+li_4320210772,SQL
+li_4320210772,JavaScript/TypeScript
+li_4320210772,API / Integrasi
+li_4483829759,Excel
+li_4483829759,ERP / SAP
+li_4481163093,SQL
+li_4481163093,ETL / Data Pipeline
+li_4481163093,Visualisasi Data
+li_4481163093,ERP / SAP
+li_4481163093,JavaScript/TypeScript
+li_4481163093,Node.js
+li_4481163093,API / Integrasi
+li_4481163093,CI/CD
+li_4323045171,SQL
+li_4323045171,Excel
+li_4323045171,Google Sheets
+li_4323045171,Storytelling / Presentasi
+li_4323045171,ERP / SAP
+li_4323045171,Networking
+li_4478188959,ERP / SAP
+li_4478188959,API / Integrasi
+li_4478188959,Networking
+li_4443799949,Excel
+li_4443799949,ETL / Data Pipeline
+li_4443799949,JIRA / Agile
+li_4443799949,ERP / SAP
+li_4443799949,Networking
+li_4443799949,Figma / Design Tool
+li_4472493925,ERP / SAP
+li_4455806137,ERP / SAP
+li_4455806137,Figma / Design Tool
+li_4479408166,JIRA / Agile
+li_4479408166,ERP / SAP
+li_4479408166,Linux
+li_4481363341,SQL
+li_4481363341,ERP / SAP
+li_4320310886,SQL
+li_4320310886,Storytelling / Presentasi
+li_4481310871,Excel
+li_4481310871,Visualisasi Data
+li_4481310871,JIRA / Agile
+li_4450919634,Cloud (AWS/GCP/Azure)
+li_4450919634,Docker / K8s
+li_4450919634,Linux
+li_4450919634,Networking
+li_4480777651,Cloud (AWS/GCP/Azure)
+li_4480777651,JIRA / Agile
+li_4478804192,ERP / SAP
+li_4373455442,ERP / SAP
+li_4476173411,Storytelling / Presentasi
+li_4476173411,JIRA / Agile
+li_4441434995,Cloud (AWS/GCP/Azure)
+li_4441434995,JIRA / Agile
+li_4441434995,API / Integrasi
+li_4441434995,Networking
+li_4482690776,JIRA / Agile
+li_4479958262,JIRA / Agile
+li_4458195540,Storytelling / Presentasi
+li_4458195540,JIRA / Agile
+li_4474261246,JIRA / Agile
+li_4474261246,ERP / SAP
+li_4463344880,Cloud (AWS/GCP/Azure)
+li_4463344880,Networking
+li_4482163811,Excel
+li_4482163811,Storytelling / Presentasi
+li_4482163811,JIRA / Agile
+li_4482163811,Networking
+li_4159073170,ERP / SAP
+li_4463137517,Excel
+li_4463137517,Networking
+li_4132000346,SQL
+li_4132000346,JIRA / Agile
+li_4132000346,Networking
+li_4132000346,Figma / Design Tool
+li_4483618149,Visualisasi Data
+li_4483618149,Networking
+li_4481603759,Visualisasi Data
+li_4481603759,Networking
+li_4451100908,Excel
+li_4451100908,ERP / SAP
+li_4477557458,ERP / SAP
+li_4482010369,SQL
+li_4482010369,Cloud (AWS/GCP/Azure)
+li_4482010369,Spark / Hadoop
+li_4482010369,JIRA / Agile
+li_4482010369,NoSQL / MongoDB
+li_4482010369,React
+li_4482010369,Node.js
+li_4462142550,API / Integrasi
+li_4462142550,CI/CD
+li_4481356672,Python
+li_4481356672,Storytelling / Presentasi
+li_4481356672,Linux
+li_4481356672,Networking
+li_4482058185,Cloud (AWS/GCP/Azure)
+li_4482058185,Networking
+li_4479952663,Networking
+li_4449076402,Networking
+li_4467792283,Storytelling / Presentasi
+li_4467792283,Networking
+li_4416396769,Networking
+li_4462060781,Networking
+li_4414936086,Python
+li_4414936086,Cloud (AWS/GCP/Azure)
+li_4414936086,Airflow / Orchestrasi
+li_4414936086,JIRA / Agile
+li_4414936086,Docker / K8s
+li_4414936086,Linux
+li_4414936086,API / Integrasi
+li_4414936086,Testing / QA Tools
+li_4414936086,Networking
+li_4448172097,Networking
+li_4473244006,Python
+li_4473244006,Networking
+li_4474996977,Networking
+li_4475936273,Python
+li_4475936273,Cloud (AWS/GCP/Azure)
+li_4475936273,API / Integrasi
+li_4475936273,Networking
+li_4446740481,Java
+li_4446740481,Networking
+li_4472507979,JIRA / Agile
+li_4472507979,Networking
+li_4471697225,Google Sheets
+li_4471697225,Storytelling / Presentasi
+li_4471697225,Networking
+li_4483852115,Python
+li_4483852115,Airflow / Orchestrasi
+li_4483852115,Visualisasi Data
+li_4483852115,API / Integrasi
+li_4483852115,Testing / QA Tools
+li_4483852115,Networking
+li_4473213639,SQL
+li_4473213639,Python
+li_4473213639,Excel
+li_4473213639,Linux
+li_4456318410,Networking
+li_4483875429,Networking
+li_4481601795,Docker / K8s
+li_4481601795,Linux
+li_4481601795,Networking
+li_4478754694,Cloud (AWS/GCP/Azure)
+li_4478754694,Networking
+li_4450515892,Networking
+li_4461958501,Cloud (AWS/GCP/Azure)
+li_4461958501,Linux
+li_4461958501,API / Integrasi
+li_4436200274,Python
+li_4436200274,Networking
+li_4479002029,Cloud (AWS/GCP/Azure)
+li_4479002029,Linux
+li_4479002029,Networking
+li_4479997136,Airflow / Orchestrasi
+li_4479997136,Networking
+li_4481643976,Linux
+li_4481643976,Networking
+li_4476793486,Python
+li_4476793486,Excel
+li_4476793486,Cloud (AWS/GCP/Azure)
+li_4476793486,Networking
+li_4463192820,Networking
+li_4320121069,Networking
+li_4478395670,Networking
+li_4472527788,Airflow / Orchestrasi
+li_4472527788,Docker / K8s
+li_4472527788,Networking
+li_4477282617,Java
+li_4477282617,Linux
+li_4477282617,Networking
+li_4329759962,Networking
+li_4476925586,Python
+li_4476925586,Cloud (AWS/GCP/Azure)
+li_4476925586,Networking
+li_4479761019,Networking
+li_4469896459,Python
+li_4469896459,Storytelling / Presentasi
+li_4469896459,ERP / SAP
+li_4469896459,JavaScript/TypeScript
+li_4469896459,Node.js
+li_4469896459,PHP / Laravel
+li_4469896459,API / Integrasi
+li_4469896459,Networking
+li_4481365298,Linux
+li_4481365298,Networking
+li_4440222782,Python
+li_4440222782,Cloud (AWS/GCP/Azure)
+li_4440222782,Linux
+li_4440222782,Networking
+li_4475786885,Storytelling / Presentasi
+li_4475786885,Linux
+li_4475786885,Networking
+li_4480783413,Visualisasi Data
+li_4480783413,Networking
+li_4470626602,BigQuery
+li_4470626602,Cloud (AWS/GCP/Azure)
+li_4470626602,ETL / Data Pipeline
+li_4470626602,Machine Learning
+li_4470626602,Docker / K8s
+li_4470626602,CI/CD
+li_4470626602,Networking
+li_4474662424,SQL
+li_4474662424,Spark / Hadoop
+li_4474662424,Linux
+li_4476187129,Cloud (AWS/GCP/Azure)
+li_4476187129,Docker / K8s
+li_4476187129,API / Integrasi
+li_4476187129,Networking
+li_4480279278,ERP / SAP
+li_4480279278,Networking
+li_4479956174,Docker / K8s
+li_4479956174,Linux
+li_4479956174,Networking
+li_4446734554,Cloud (AWS/GCP/Azure)
+li_4446734554,Java
+li_4446734554,Networking
+li_4475745971,Linux
+li_4475745971,Networking
+li_4456316438,Cloud (AWS/GCP/Azure)
+li_4456316438,Linux
+li_4474598807,Linux
+li_4409282457,SQL
+li_4409282457,ERP / SAP
+li_4409282457,Linux
+li_4468135922,Linux
+li_4468135922,Networking
+li_4460040315,Cloud (AWS/GCP/Azure)
+li_4460040315,ERP / SAP
+li_4444747116,SQL
+li_4444747116,Cloud (AWS/GCP/Azure)
+li_4444747116,Storytelling / Presentasi
+li_4444747116,API / Integrasi
+li_4484049214,Python
+li_4484049214,Git
+li_4484049214,Docker / K8s
+li_4484049214,Linux
+li_4484049214,Networking
+li_4483838508,Excel
+li_4483838508,Linux
+li_4483838508,Networking
+li_4481747620,Google Sheets
+li_4481747620,ERP / SAP
+li_4481747620,API / Integrasi
+li_4472099950,SQL
+li_4472099950,Excel
+li_4472099950,Networking
+li_4476736843,SQL
+li_4476736843,Linux
+li_4433994074,SQL
+li_4433994074,Cloud (AWS/GCP/Azure)
+li_4433994074,Linux
+li_4433994074,Networking
+li_4430299307,Linux
+li_4430299307,Networking
+li_4469003051,Linux
+li_4469003051,Networking
+li_4437668654,SQL
+li_4437668654,SPSS / SAS
+li_4437668654,Linux
+li_4449567333,Networking
+li_4483864236,SQL
+li_4483864236,Cloud (AWS/GCP/Azure)
+li_4483864236,NoSQL / MongoDB
+li_4483864236,Linux
+li_4483864236,Networking
+li_4444663331,SQL
+li_4477977244,SQL
+li_4477977244,Cloud (AWS/GCP/Azure)
+li_4477977244,Linux
+li_4483851448,SQL
+li_4483851448,Networking
+li_4468149545,SQL
+li_4468149545,Python
+li_4468149545,Cloud (AWS/GCP/Azure)
+li_4468149545,Storytelling / Presentasi
+li_4468149545,NoSQL / MongoDB
+li_4468149545,ERP / SAP
+li_4468149545,Networking
+li_4455897488,SQL
+li_4455897488,Cloud (AWS/GCP/Azure)
+li_4455897488,Git
+li_4455897488,NoSQL / MongoDB
+li_4455897488,Docker / K8s
+li_4474690585,Networking
+li_4461258461,SQL
+li_4461258461,Networking
+li_4434896758,SQL
+li_4434896758,NoSQL / MongoDB
+li_4434896758,Networking
+li_4478766460,SQL
+li_4478766460,Git
+li_4478766460,JIRA / Agile
+li_4478766460,ERP / SAP
+li_4478766460,JavaScript/TypeScript
+li_4478766460,Java
+li_4478766460,API / Integrasi
+li_4458630349,SQL
+li_4458630349,Excel
+li_4458630349,API / Integrasi
+li_4390562682,ERP / SAP
+li_4317433424,SQL
+li_4317433424,Linux
+li_4446079596,SQL
+li_4446079596,Python
+li_4446079596,Power BI
+li_4446079596,Machine Learning
+li_4375765837,ERP / SAP
+li_4481680168,ERP / SAP
+li_4480954739,Excel
+li_4480954739,Visualisasi Data
+li_4480954739,ERP / SAP
+li_4483862134,SQL
+li_4483862134,Cloud (AWS/GCP/Azure)
+li_4483862134,Statistik
+li_4483862134,Networking
+li_4418106915,Excel
+li_4418106915,Visualisasi Data
+li_4418106915,ERP / SAP
+li_4483859647,SQL
+li_4483859647,Cloud (AWS/GCP/Azure)
+li_4483859647,NoSQL / MongoDB
+li_4483859647,Linux
+li_4481639909,ETL / Data Pipeline
+li_4481639909,ERP / SAP
+li_4481639909,API / Integrasi
+li_4481639909,Networking
+li_4456898128,Excel
+li_4456898128,JIRA / Agile
+li_4456898128,ERP / SAP
+li_4483867480,SQL
+li_4483867480,Python
+li_4483867480,ETL / Data Pipeline
+li_4450521789,SQL
+li_4450521789,ETL / Data Pipeline
+li_4450521789,Visualisasi Data
+li_4450521789,API / Integrasi
+li_4482280891,SQL
+li_4482280891,API / Integrasi
+li_4482280891,Networking
+li_4448996433,SQL
+li_4448996433,Python
+li_4448996433,Cloud (AWS/GCP/Azure)
+li_4448996433,Spark / Hadoop
+li_4448996433,Airflow / Orchestrasi
+li_4448996433,Visualisasi Data

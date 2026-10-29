@@ -1,15 +1,15 @@
 # Executive Report — Indonesia IT & Analytics Job Market
 
-**Basis:** 1.524 lowongan relevan (Kalibrr + LinkedIn guest API), snapshot
+**Basis:** 1.630 lowongan relevan (Kalibrr + LinkedIn guest API), snapshot
 Okt 2026. Semua angka dihitung `src/key_metrics.py`; uji statistik di
 `notebooks/02_statistik_job_market.ipynb`. **Data riil, bukan sintetis.**
 
 ## Ringkasan eksekutif
 
 Pasar kerja digital Indonesia lebih besar dari sekadar peran "analyst" —
-dataset ini memetakan **delapan domain** dari 1.524 lowongan riil.
+dataset ini memetakan **delapan domain** dari 1.630 lowongan riil.
 Software Engineering adalah segmen terbesar (29%), Data & Analytics
-terbesar kedua (25%). Temuan metodologis terpenting tetap sama:
+terbesar kedua (24%). Temuan metodologis terpenting tetap sama:
 **platform menentukan pasar yang terlihat** — LinkedIn mensampling segmen
 enterprise/stack-first, Kalibrr mensampling segmen lokal/spreadsheet-first.
 
@@ -18,23 +18,24 @@ enterprise/stack-first, Kalibrr mensampling segmen lokal/spreadsheet-first.
 ### 1. Peta domain pasar
 | Domain | n | Share |
 |---|---|---|
-| Software Engineering | 441 | 29% |
-| Data & Analytics | 383 | 25% |
-| Adjacent (non-IT)¹ | 251 | 16% |
-| IT Mgmt & Consulting | 189 | 12% |
-| Infra & Network | 121 | 8% |
-| IT Support | 55 | 4% |
-| Security | 52 | 3% |
-| Design (UI/UX) | 32 | 2% |
+| Software Engineering | 467 | 29% |
+| Data & Analytics | 384 | 24% |
+| Adjacent (non-IT)¹ | 306 | 19% |
+| IT Mgmt & Consulting | 193 | 12% |
+| Infra & Network | 127 | 8% |
+| Security | 64 | 4% |
+| IT Support | 56 | 3% |
+| Design (UI/UX) | 33 | 2% |
 
 ¹ Peran non-IT yang lolos gerbang skill (≥2 skill inti di deskripsi) —
 dilaporkan jujur sebagai adjacent, bukan dibuang atau dipaksakan masuk IT.
 
 - Senioritas: **71% Mid**, 25% Senior/Lead, 5% Junior/Entry → pasar
   mencari yang sudah jadi.
-- Keluarga peran terbesar: Software Engineering (361), DevOps & Infra
-  (111), ERP & IT Consulting (103), Business/System Analyst (86),
-  QA & Testing (80), Data Engineer (71), Data Analyst (67).
+- Keluarga peran terbesar: Software Engineering (376), DevOps & Infra
+  (117), Analyst Lainnya (112), ERP & IT Consulting (105),
+  QA & Testing (91), Business/System Analyst (88), Data Engineer (71),
+  Data Analyst (67), Security (64).
 
 ### 2. Skill signature per domain
 - **Data & Analytics:** SQL, Excel, Statistik, Visualisasi, Power BI —
@@ -74,7 +75,7 @@ cloud di segmen enterprise — **roadmap belajar ideal mencakup keduanya**.
   dibanding domain IT inti (2–9%).
 
 ### 5. Gaji — temuan dengan keterbatasan keras
-- Hanya **48/1.524 (3%)** lowongan menampilkan gaji (Kalibrr saja;
+- Hanya **49/1.630 (3%)** lowongan menampilkan gaji (Kalibrr saja;
   LinkedIn tidak menampilkan gaji di guest API).
 - Median gaji max: **Rp10,0 jt/bln**; rentang Rp2,6–30 jt.
 - Analisis gaji per peran/senioritas hanya indikatif — n per sel terlalu
@@ -95,7 +96,7 @@ cloud di segmen enterprise — **roadmap belajar ideal mencakup keduanya**.
 | Judul analyst × fresh-grad | chi², p>0,05 | Tidak ada asosiasi |
 | Domain × fresh-grad | chi², p signifikan | Adjacent paling terbuka |
 | Platform × domain | chi² + CramérV kuat | Dua platform = dua pasar |
-| Gaji junior < senior | n=48 | Deskriptif saja |
+| Gaji junior < senior | n=49 | Deskriptif saja |
 
 **Integritas:** hasil non-signifikan dilaporkan apa adanya; angka persis
 ada di notebook 2 (ter-execute, 0 error).
@@ -108,7 +109,7 @@ ada di notebook 2 (ter-execute, 0 error).
    deskripsi; analisis skill berbasis subset ber-deskripsi.
 3. Skill mix berbeda antar platform = sampling artefak, dicatat apa
    adanya — bukan digabung jadi satu angka.
-4. Gaji: bias ke perusahaan transparan, n=48 (3%).
+4. Gaji: bias ke perusahaan transparan, n=49 (3%).
 5. Smart-city/public-sector tech dicari eksplisit tapi hasilnya minim —
    pasar segmen itu nyata lebih kecil di job board umum; dicatat, bukan
    dilebih-lebihkan.

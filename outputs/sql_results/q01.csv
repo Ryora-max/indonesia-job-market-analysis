@@ -1,40 +1,40 @@
 skill,n_lowongan,persen
-SQL,523,34.3
-Python,365,24.0
-API / Integrasi,346,22.7
-Networking,339,22.2
-Excel,269,17.7
-Git,263,17.3
-JavaScript/TypeScript,263,17.3
-Cloud (AWS/GCP/Azure),246,16.1
-CI/CD,242,15.9
-JIRA / Agile,237,15.6
-Visualisasi Data,236,15.5
-Storytelling / Presentasi,229,15.0
-Statistik,200,13.1
-Docker / K8s,188,12.3
-Java,174,11.4
-Power BI,148,9.7
-ETL / Data Pipeline,147,9.6
-React,142,9.3
-Testing / QA Tools,136,8.9
-ERP / SAP,134,8.8
-Google Sheets,134,8.8
-Machine Learning,116,7.6
-Tableau,104,6.8
-Linux,102,6.7
-Airflow / Orchestrasi,89,5.8
-Node.js,87,5.7
-NoSQL / MongoDB,72,4.7
-Looker / Data Studio,68,4.5
-PHP / Laravel,65,4.3
-Spark / Hadoop,49,3.2
-Golang,46,3.0
-BigQuery,44,2.9
-Flutter,38,2.5
-Figma / Design Tool,31,2.0
-dbt,27,1.8
-SPSS / SAS,17,1.1
-Firebase / Supabase,16,1.0
-CMS / WordPress,14,0.9
+SQL,586,36.0
+Networking,491,30.1
+Python,417,25.6
+API / Integrasi,401,24.6
+Excel,312,19.1
+Cloud (AWS/GCP/Azure),309,19.0
+JIRA / Agile,293,18.0
+JavaScript/TypeScript,291,17.9
+Git,275,16.9
+CI/CD,263,16.1
+Visualisasi Data,260,16.0
+Storytelling / Presentasi,259,15.9
+Docker / K8s,215,13.2
+Statistik,207,12.7
+ERP / SAP,203,12.5
+Java,188,11.5
+Linux,163,10.0
+Testing / QA Tools,163,10.0
+ETL / Data Pipeline,159,9.8
+Power BI,152,9.3
+Google Sheets,148,9.1
+React,147,9.0
+Machine Learning,120,7.4
+Tableau,107,6.6
+Airflow / Orchestrasi,100,6.1
+Node.js,93,5.7
+NoSQL / MongoDB,81,5.0
+PHP / Laravel,73,4.5
+Looker / Data Studio,71,4.4
+Figma / Design Tool,67,4.1
+Spark / Hadoop,54,3.3
+Golang,47,2.9
+BigQuery,46,2.8
+Flutter,40,2.5
+dbt,27,1.7
+CMS / WordPress,18,1.1
+SPSS / SAS,18,1.1
+Firebase / Supabase,17,1.0
 R,1,0.1

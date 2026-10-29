@@ -1,8 +1,8 @@
 skill,n
-SQL,45
-Visualisasi Data,43
+SQL,46
+Visualisasi Data,44
 Statistik,38
-Python,34
+Python,35
 Excel,32
 Power BI,31
 Tableau,26
@@ -13,16 +13,16 @@ Storytelling / Presentasi,13
 BigQuery,11
 ETL / Data Pipeline,9
 API / Integrasi,7
+Airflow / Orchestrasi,7
 dbt,7
-Airflow / Orchestrasi,6
 ERP / SAP,6
 Machine Learning,6
+Cloud (AWS/GCP/Azure),5
 Git,5
-Cloud (AWS/GCP/Azure),4
 SPSS / SAS,4
 NoSQL / MongoDB,3
+Spark / Hadoop,3
 JIRA / Agile,2
 JavaScript/TypeScript,2
-Spark / Hadoop,2
 Java,1
 Testing / QA Tools,1

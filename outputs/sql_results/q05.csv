@@ -1,36 +1,36 @@
 kota,n,pct_remote,pct_hybrid
-Jakarta,825,0.1,0.0
-South Jakarta,80,6.3,5.0
-West Jakarta,60,13.3,31.7
-Tangerang,58,0.0,1.7
-Bandung,45,0.0,0.0
-Central Jakarta,42,2.4,4.8
-Indonesia,31,0.0,0.0
-Yogyakarta,30,0.0,0.0
-Surabaya,22,0.0,0.0
-Web,20,0.0,0.0
+Jakarta,884,0.1,0.0
+South Jakarta,85,5.9,4.7
+West Jakarta,63,14.3,30.2
+Tangerang,63,0.0,1.6
+Bandung,50,0.0,0.0
+Central Jakarta,43,2.3,4.7
+Yogyakarta,33,0.0,0.0
+Indonesia,32,0.0,0.0
+Surabaya,23,0.0,0.0
+Web,21,0.0,0.0
+Lembang,15,0.0,0.0
 Jakarta Selatan,15,0.0,33.3
-Lembang,12,0.0,0.0
-Batam,11,0.0,0.0
+Batam,14,0.0,0.0
+Greater Bandung,11,0.0,0.0
 Palembang,10,0.0,0.0
 Malang,10,0.0,30.0
-Greater Bandung,10,0.0,0.0
+Kota Tangerang Selatan,10,0.0,0.0
 Sidoarjo,9,0.0,0.0
-Kota Jakarta Pusat,8,0.0,0.0
+Kota Jakarta Pusat,9,0.0,0.0
 Denpasar,8,0.0,0.0
+Yaur,7,0.0,0.0
 Jakarta Pusat,7,14.3,14.3
-Yaur,6,0.0,0.0
-Kota Tangerang Selatan,6,0.0,0.0
-East Java,6,0.0,0.0
+East Java,7,0.0,0.0
+Jakarta Barat,6,16.7,16.7
+Batang,6,0.0,0.0
 Ai,6,0.0,0.0
 Tangerang Regency,5,0.0,0.0
 Sleman,5,0.0,20.0
 Semarang,5,0.0,0.0
 Purbalingga,5,0.0,0.0
-Jakarta Barat,5,0.0,20.0
 Greater Surabaya,5,0.0,0.0
 Bekasi,5,0.0,0.0
-Batang,5,0.0,0.0
 South Tangerang,4,0.0,50.0
 Pontianak,4,0.0,0.0
 Kota Jakarta Barat,4,0.0,50.0
@@ -47,4 +47,5 @@ Medan,3,0.0,0.0
 Malang Regency,3,0.0,0.0
 Kuta,3,0.0,0.0
 East Jakarta,3,0.0,0.0
+Central Cikarang,3,0.0,0.0
 Bekasi Regency,3,0.0,0.0
