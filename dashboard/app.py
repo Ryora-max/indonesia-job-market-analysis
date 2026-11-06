@@ -17,45 +17,113 @@ PALETTE = ["#7C3AED", "#94A3B8", "#64748B", "#475569",
 
 st.markdown("""
 <style>
-    [data-testid="stAppViewContainer"] {background: #F8FAFC;}
-    [data-testid="stSidebar"] {background: #F1F5F9;}
-    .hero {background:#FFFFFF;border:1px solid #E5E7EB;border-left:6px solid #7C3AED;
-           border-radius:14px;padding:1.3rem 1.5rem;margin-bottom:1rem;}
-    .hero h1 {margin:0;font-size:1.55rem;font-weight:800;letter-spacing:.2px;}
-    .hero p  {margin:.35rem 0 0;font-size:.95rem;color:#64748B;}
-    .kpi-grid {display:grid;gap:.9rem;margin-bottom:.4rem;
+    .block-container {padding-top:1.2rem;padding-bottom:2.5rem;max-width:1320px;}
+    [data-testid="stAppViewContainer"] {background:#F5F7FB;}
+    [data-testid="stSidebar"] {background:#FFFFFF;border-right:1px solid #E8ECF2;}
+    [data-testid="stSidebar"] * {color:#334155 !important;}
+    [data-testid="stSidebar"] .stMultiSelect label {font-weight:600;}
+
+    /* ---------- Hero: soft gradient + chips ---------- */
+    .hero {position:relative;overflow:hidden;
+        background:linear-gradient(115deg,#FFFFFF 42%,#F3EEFF 100%);
+        border:1px solid #E6EAF2;border-radius:18px;
+        padding:1.5rem 1.7rem 1.35rem;margin:0 0 1.35rem;
+        box-shadow:0 4px 18px rgba(15,23,42,.05);}
+    .hero::after {content:"";position:absolute;right:-70px;top:-90px;
+        width:260px;height:260px;border-radius:50%;
+        background:radial-gradient(circle,rgba(124,58,237,.14) 0%,transparent 70%);}
+    .hero .eyebrow {font-size:.7rem;font-weight:800;letter-spacing:1.6px;
+        text-transform:uppercase;color:#7C3AED;margin-bottom:.35rem;}
+    .hero h1 {margin:0;font-size:1.6rem;font-weight:800;
+        letter-spacing:-.3px;color:#0F172A;}
+    .hero p {margin:.45rem 0 .75rem;font-size:.92rem;color:#5B6B83;
+        max-width:60rem;}
+    .hero .chip {display:inline-block;font-size:.71rem;font-weight:600;
+        background:rgba(255,255,255,.8);border:1px solid #E2E8F0;
+        border-radius:999px;padding:.22rem .7rem;margin:0 .4rem .1rem 0;
+        color:#475569;}
+    .hero .chip b {color:#0F172A;}
+
+    /* ---------- KPI cards ---------- */
+    .kpi-grid {display:grid;gap:.9rem;margin-bottom:.5rem;
                grid-template-columns:repeat(5,1fr);}
-    .kpi {background:#FFFFFF;border:1px solid #E5E7EB;
-          border-radius:14px;padding:1rem 1rem .85rem;
-          box-shadow:0 1px 3px rgba(15,23,42,.06);}
-    .kpi .label {font-size:.74rem;font-weight:700;color:#64748B;
-                 text-transform:uppercase;letter-spacing:.4px;}
-    .kpi .value {font-size:1.7rem;font-weight:800;color:#111827;
-                 margin:.15rem 0;word-break:break-word;}
-    .kpi .sub   {font-size:.78rem;color:#94A3B8;margin-top:.15rem;}
-    .sec-pill {display:inline-block;font-size:.78rem;font-weight:700;
-               text-transform:uppercase;letter-spacing:.6px;
-               background:#F1F5F9;border:1px solid #E2E8F0;
-               padding:.28rem .7rem;border-radius:999px;margin-bottom:.4rem;}
-    .insight {background:#FFFFFF;border:1px solid #E5E7EB;
-              border-left:5px solid #7C3AED;border-radius:12px;
-              padding:.85rem 1rem;font-size:.95rem;margin-top:.4rem;}
-    .insight.pos {border-left-color:#16A34A;}
-    .insight.warn {border-left-color:#D97706;}
-    .insight.risk {border-left-color:#DC2626;}
-    div[data-testid="stMetric"] {background:#FFFFFF;border:1px solid #E5E7EB;
+    .kpi {background:#FFFFFF;border:1px solid #E8ECF2;border-radius:14px;
+          padding:.95rem 1.05rem .85rem;min-width:0;position:relative;
+          overflow:hidden;box-shadow:0 1px 3px rgba(15,23,42,.05);
+          transition:transform .16s ease,box-shadow .16s ease;}
+    .kpi:hover {transform:translateY(-3px);
+        box-shadow:0 8px 20px rgba(15,23,42,.09);}
+    .kpi::before {content:"";position:absolute;top:0;left:0;right:0;
+        height:3px;background:linear-gradient(90deg,#7C3AED,#7C3AED55);}
+    .kpi .top {display:flex;align-items:center;gap:.45rem;}
+    .kpi .icon {font-size:.95rem;}
+    .kpi .label {font-size:.72rem;font-weight:700;color:#64748B;
+                 text-transform:uppercase;letter-spacing:.5px;}
+    .kpi .value {font-size:1.7rem;font-weight:800;color:#0F172A;
+                 line-height:1.15;margin:.3rem 0 .1rem;word-break:break-word;}
+    .kpi .sub {font-size:.76rem;color:#94A3B8;}
+
+    /* ---------- Section pill ---------- */
+    .sec-pill {display:inline-flex;align-items:center;gap:.45rem;
+               font-size:.78rem;font-weight:800;letter-spacing:.6px;
+               text-transform:uppercase;color:#475569;
+               background:#FFFFFF;border:1px solid #E8ECF2;
+               padding:.32rem .85rem;border-radius:999px;
+               margin:.8rem 0 .45rem;
+               box-shadow:0 1px 2px rgba(15,23,42,.04);}
+    .sec-pill .dot {width:8px;height:8px;border-radius:50%;
+        background:#7C3AED;box-shadow:0 0 0 3px rgba(124,58,237,.15);}
+
+    /* ---------- Insight tinted ---------- */
+    .insight {border-radius:12px;padding:.85rem 1.05rem;font-size:.88rem;
+              margin:.65rem 0;border:1px solid;line-height:1.55;}
+    .insight.blue {background:#EFF6FF;border-color:#BFDBFE;color:#1E3A8A;}
+    .insight.green {background:#F0FDF4;border-color:#BBF7D0;color:#14532D;}
+    .insight.amber {background:#FFFBEB;border-color:#FDE68A;color:#78350F;}
+    .insight.red {background:#FEF2F2;border-color:#FECACA;color:#7F1D1D;}
+    .insight.purple {background:#F5F3FF;border-color:#DDD6FE;color:#4C1D95;}
+
+    /* ---------- Tabs: segmented control ---------- */
+    .stTabs [data-baseweb="tab-list"] {gap:.35rem;border-bottom:none;
+        background:#FFFFFF;padding:.35rem;border-radius:14px;
+        border:1px solid #E8ECF2;width:fit-content;max-width:100%;
+        box-shadow:0 1px 3px rgba(15,23,42,.04);}
+    .stTabs [data-baseweb="tab"] {border-radius:10px;padding:.5rem 1rem;
+        font-weight:600;font-size:.9rem;color:#64748B;border:none;}
+    .stTabs [aria-selected="true"] {background:#7C3AED !important;
+        color:#FFFFFF !important;}
+    .stTabs [data-baseweb="tab-highlight"] {display:none;}
+
+    [data-testid="stExpander"] {background:#FFFFFF;border-radius:12px;
+        border:1px solid #E8ECF2;}
+    [data-testid="stDataFrame"] {border-radius:12px;overflow:hidden;
+        border:1px solid #E8ECF2;background:#FFFFFF;}
+    div[data-testid="stMetric"] {background:#FFFFFF;border:1px solid #E8ECF2;
         border-radius:12px;padding:.6rem .9rem;}
-    button[data-baseweb="tab"] {font-weight:600;}
-    @media (max-width: 1000px) {
+    div[data-testid="stSelectbox"] label {font-weight:600;}
+
+    /* ---------- Footer ---------- */
+    .footer {margin-top:2.2rem;padding-top:1rem;
+        border-top:1px solid #E6EAF2;font-size:.75rem;color:#94A3B8;
+        display:flex;justify-content:space-between;flex-wrap:wrap;gap:.4rem;}
+    .footer b {color:#64748B;}
+
+    /* ---------- Responsive ---------- */
+    @media (max-width:1000px) {
         .kpi-grid {grid-template-columns:repeat(3,1fr);}
+        .stTabs [data-baseweb="tab"] {padding:.4rem .65rem;font-size:.82rem;}
     }
-    @media (max-width: 640px) {
+    @media (max-width:640px) {
+        .block-container {padding-left:.8rem;padding-right:.8rem;}
         .kpi-grid {grid-template-columns:repeat(2,1fr);gap:.6rem;}
         .kpi {padding:.8rem .8rem .7rem;}
         .kpi .value {font-size:1.3rem;}
-        .hero {padding:1rem 1.1rem;}
-        .hero h1 {font-size:1.2rem;}
+        .hero {padding:1.1rem 1.15rem;}
+        .hero h1 {font-size:1.25rem;}
         .hero p {font-size:.85rem;}
+        .hero .chip {font-size:.66rem;padding:.18rem .55rem;}
+        .sec-pill {font-size:.7rem;}
+        .insight {font-size:.82rem;padding:.7rem .8rem;}
     }
 </style>
 """, unsafe_allow_html=True)
@@ -73,8 +141,13 @@ lv_all, sk_all = load()
 
 
 def chart(fig):
-    fig.update_layout(plot_bgcolor="white", paper_bgcolor="white",
-                      font_color="#1F2937", margin=dict(t=40, b=30))
+    fig.update_layout(
+        plot_bgcolor="white", paper_bgcolor="white",
+        font=dict(family="Inter, Segoe UI, sans-serif", size=13,
+                  color="#334155"),
+        margin=dict(t=40, b=30, l=10, r=10))
+    fig.update_xaxes(showgrid=False, zeroline=False, automargin=True)
+    fig.update_yaxes(gridcolor="#EEF2F6", zeroline=False, automargin=True)
     st.plotly_chart(fig, width="stretch")
 
 
@@ -82,14 +155,20 @@ def table(df, **kw):
     st.dataframe(df, width="stretch", hide_index=True, **kw)
 
 
+_TONE = {"": "purple", "pos": "green", "warn": "amber", "risk": "red",
+         "blue": "blue"}
+
+
 def insight(text, tone=""):
-    st.markdown(f'<div class="insight {tone}">💡 {text}</div>',
-                unsafe_allow_html=True)
+    st.markdown(
+        f'<div class="insight {_TONE.get(tone, "purple")}">💡 {text}</div>',
+        unsafe_allow_html=True)
 
 
-def sec(icon, text, color=C_MAIN):
-    st.markdown(f'<div class="sec-pill" style="color:{color}">{icon} '
-                f'{text}</div>', unsafe_allow_html=True)
+def sec(icon, text, color=None):
+    st.markdown(
+        f'<div class="sec-pill"><span class="dot"></span>{icon} {text}</div>',
+        unsafe_allow_html=True)
 
 
 def md(isi_md):
@@ -127,27 +206,36 @@ n = len(lv)
 # ---------------- Hero + KPI ---------------- #
 st.markdown("""
 <div class="hero">
+  <div class="eyebrow">Portfolio Project · Real-World Data Analytics</div>
   <h1>📈 Indonesia IT & Data Job Market</h1>
-  <p>Peta pasar kerja IT dari lowongan RIIL Kalibrr + LinkedIn —
-     skill demand, gaji, lokasi, dan pola perekrutan per segmen</p>
+  <p>Peta pasar kerja digital Indonesia dari lowongan <b>riil</b> Kalibrr +
+     LinkedIn — skill demand, gaji, lokasi, dan pola perekrutan
+     di 8 domain IT.</p>
+  <span class="chip"><b>1.630</b> lowongan</span>
+  <span class="chip"><b>8</b> domain</span>
+  <span class="chip"><b>6.882</b> baris skill</span>
+  <span class="chip">📅 Okt 2026</span>
+  <span class="chip">DATA RIIL — bukan sintetis</span>
 </div>
 """, unsafe_allow_html=True)
 
 top_skill = sk.skill.value_counts().idxmax() if len(sk) else "-"
 pct_gaji = lv.gaji_max_jt.notna().mean()
 kpis = [
-    ("Lowongan Relevan", f"{n:,}", f"{lv.domain.nunique()} segmen"),
-    ("Peran Data", f"{(lv.domain=='Data & Analytics').mean():.0%}",
-     "analyst/data di judul"),
-    ("Skill Terdeteksi", f"{sk.skill.nunique()}", f"top: {top_skill}"),
-    ("Tampilkan Gaji", f"{pct_gaji:.0%}", "hanya Kalibrr — transparansi rendah"),
-    ("Remote / Hybrid", f"{lv.remote.mean()+lv.hybrid.mean():.0%}",
+    ("📄", "Lowongan Relevan", f"{n:,}", f"{lv.domain.nunique()} segmen"),
+    ("📊", "Peran Data", f"{(lv.domain=='Data & Analytics').mean():.0%}",
+     "share domain data & analytics"),
+    ("🧩", "Skill Terdeteksi", f"{sk.skill.nunique()}", f"top: {top_skill}"),
+    ("💰", "Tampilkan Gaji", f"{pct_gaji:.0%}",
+     "hanya Kalibrr — transparansi rendah"),
+    ("🏠", "Remote / Hybrid", f"{lv.remote.mean()+lv.hybrid.mean():.0%}",
      f"{lv.remote.sum()} remote · {lv.hybrid.sum()} hybrid"),
 ]
 st.markdown('<div class="kpi-grid">' + "".join(
-    f'<div class="kpi"><div class="label">{a}</div>'
+    f'<div class="kpi"><div class="top"><span class="icon">{i}</span>'
+    f'<span class="label">{a}</span></div>'
     f'<div class="value">{b}</div><div class="sub">{c}</div></div>'
-    for a, b, c in kpis) + "</div>", unsafe_allow_html=True)
+    for i, a, b, c in kpis) + "</div>", unsafe_allow_html=True)
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs(
     ["🗺️ Pasar", "🧩 Skill Demand", "💰 Gaji & Lokasi",
@@ -374,3 +462,10 @@ with tab5:
 
 st.sidebar.caption("Data diambil 27 Okt 2026 · 2 tabel relasional: "
                    "lowongan 1—n job_skill")
+
+# ---------------- Footer ---------------- #
+st.markdown(
+    '<div class="footer"><span><b>Indonesia IT & Data Job Market</b> — '
+    'portfolio project · data RIIL Kalibrr + LinkedIn guest API</span>'
+    '<span>Streamlit · Plotly · SQLite · pandas</span></div>',
+    unsafe_allow_html=True)
