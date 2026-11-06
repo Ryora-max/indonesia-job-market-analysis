@@ -59,7 +59,7 @@ transformasi/change digital.
 │   └── processed/           lowongan.csv + job_skill.csv (bersih)
 ├── database/
 │   ├── jobmarket.db         SQLite — lowongan 1—n job_skill
-│   └── queries.sql          14 query analisis
+│   └── queries.sql          18 query analisis
 ├── dashboard/app.py         Streamlit 5 tab interaktif + filter domain
 ├── src/
 │   ├── fetch_jobs.py        scraper API publik Kalibrr (paginasi+dedup)
@@ -85,7 +85,7 @@ python src/fetch_linkedin.py    # LinkedIn — resume-able, ada throttle
 python src/drip_details.py      # lanjutkan detail LinkedIn yang pending
 python src/build_dataset.py     # bersih + filter + domain + skill -> CSV+DB
 python src/validate_data.py     # 15/15 checks
-python src/run_sql_analysis.py  # 14 query -> outputs/sql_results/
+python src/run_sql_analysis.py  # 18 query -> outputs/sql_results/
 
 streamlit run dashboard/app.py  # dashboard
 ```

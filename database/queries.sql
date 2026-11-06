@@ -128,3 +128,49 @@ SELECT domain, sumber, COUNT(*) AS n,
 FROM lowongan
 GROUP BY domain, sumber
 ORDER BY domain, sumber;
+
+-- 15 Skill signature per domain — share skill DI DALAM domain (bukan global)
+WITH top AS (
+    SELECT l.domain, s.skill, COUNT(*) AS n,
+           ROW_NUMBER() OVER (
+               PARTITION BY l.domain ORDER BY COUNT(*) DESC) AS rk
+    FROM job_skill s
+    JOIN lowongan l ON l.id_lowongan = s.id_lowongan
+    GROUP BY l.domain, s.skill
+)
+SELECT t.domain, t.skill, t.n,
+       ROUND(100.0 * t.n / d.n_lowongan, 1) AS pct_dalam_domain
+FROM top t
+JOIN (SELECT domain, COUNT(*) AS n_lowongan FROM lowongan GROUP BY domain) d
+  ON d.domain = t.domain
+WHERE t.rk <= 8
+ORDER BY t.domain, t.rk;
+
+-- 16 Domain x provinsi — di mana tiap segmen terkonsentrasi
+SELECT domain, provinsi, COUNT(*) AS n
+FROM lowongan
+WHERE provinsi IS NOT NULL
+GROUP BY domain, provinsi
+HAVING n >= 3
+ORDER BY domain, n DESC;
+
+-- 17 Gaji per domain (lowongan transparan)
+SELECT domain,
+       COUNT(*) AS n_bergaji,
+       ROUND(AVG(gaji_min_jt), 1) AS avg_min,
+       ROUND(AVG(gaji_max_jt), 1) AS avg_max
+FROM lowongan
+WHERE gaji_max_jt IS NOT NULL
+GROUP BY domain
+ORDER BY avg_max DESC;
+
+-- 18 Platform x top skill — sampling artefak dua job board
+WITH ranked AS (
+    SELECT l.sumber, s.skill, COUNT(*) AS n,
+           ROW_NUMBER() OVER (
+               PARTITION BY l.sumber ORDER BY COUNT(*) DESC) AS rk
+    FROM job_skill s
+    JOIN lowongan l ON l.id_lowongan = s.id_lowongan
+    GROUP BY l.sumber, s.skill
+)
+SELECT sumber, skill, n FROM ranked WHERE rk <= 10 ORDER BY sumber, rk;

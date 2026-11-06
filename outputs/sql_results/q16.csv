@@ -1,0 +1,47 @@
+domain,provinsi,n
+Adjacent (non-IT),DKI Jakarta,168
+Adjacent (non-IT),Jawa Timur,33
+Adjacent (non-IT),Banten,28
+Adjacent (non-IT),Jawa Barat,23
+Adjacent (non-IT),Bali,11
+Adjacent (non-IT),Jawa Tengah,9
+Adjacent (non-IT),Papua,4
+Adjacent (non-IT),Kalimantan Barat,4
+Adjacent (non-IT),DI Yogyakarta,4
+Adjacent (non-IT),Sumatra Selatan,3
+Adjacent (non-IT),Sumatera Selatan,3
+Data & Analytics,DKI Jakarta,313
+Data & Analytics,Jawa Barat,23
+Data & Analytics,Banten,14
+Data & Analytics,Jawa Timur,7
+Data & Analytics,Jawa Tengah,5
+Data & Analytics,Aceh,3
+Design (UI/UX),DKI Jakarta,21
+Design (UI/UX),Papua,3
+Design (UI/UX),Jawa Barat,3
+IT Mgmt & Consulting,DKI Jakarta,154
+IT Mgmt & Consulting,Jawa Barat,14
+IT Mgmt & Consulting,Banten,7
+IT Mgmt & Consulting,Jawa Timur,5
+IT Mgmt & Consulting,Sumatra Selatan,4
+IT Support,DKI Jakarta,30
+IT Support,Jawa Timur,7
+IT Support,Banten,4
+IT Support,Jawa Tengah,3
+IT Support,Bali,3
+Infra & Network,DKI Jakarta,96
+Infra & Network,Jawa Barat,9
+Infra & Network,Banten,6
+Infra & Network,Kepulauan Riau,3
+Infra & Network,DI Yogyakarta,3
+Security,DKI Jakarta,46
+Security,Banten,8
+Security,Jawa Barat,3
+Software Engineering,DKI Jakarta,300
+Software Engineering,Jawa Barat,29
+Software Engineering,Jawa Timur,25
+Software Engineering,DI Yogyakarta,24
+Software Engineering,Banten,24
+Software Engineering,Papua,21
+Software Engineering,Kepulauan Riau,6
+Software Engineering,Bali,4

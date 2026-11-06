@@ -1,0 +1,65 @@
+domain,skill,n,pct_dalam_domain
+Adjacent (non-IT),Networking,184,60.1
+Adjacent (non-IT),Storytelling / Presentasi,128,41.8
+Adjacent (non-IT),Excel,128,41.8
+Adjacent (non-IT),Google Sheets,100,32.7
+Adjacent (non-IT),SQL,67,21.9
+Adjacent (non-IT),Visualisasi Data,58,19.0
+Adjacent (non-IT),Python,45,14.7
+Adjacent (non-IT),API / Integrasi,42,13.7
+Data & Analytics,SQL,220,57.3
+Data & Analytics,Python,183,47.7
+Data & Analytics,Statistik,155,40.4
+Data & Analytics,Visualisasi Data,154,40.1
+Data & Analytics,Excel,125,32.6
+Data & Analytics,Power BI,110,28.6
+Data & Analytics,ETL / Data Pipeline,108,28.1
+Data & Analytics,Tableau,83,21.6
+Design (UI/UX),Figma / Design Tool,30,90.9
+Design (UI/UX),Networking,10,30.3
+Design (UI/UX),JavaScript/TypeScript,5,15.2
+Design (UI/UX),Storytelling / Presentasi,4,12.1
+Design (UI/UX),JIRA / Agile,4,12.1
+Design (UI/UX),Visualisasi Data,3,9.1
+Design (UI/UX),Excel,2,6.1
+Design (UI/UX),API / Integrasi,2,6.1
+IT Mgmt & Consulting,ERP / SAP,105,54.4
+IT Mgmt & Consulting,JIRA / Agile,55,28.5
+IT Mgmt & Consulting,SQL,45,23.3
+IT Mgmt & Consulting,Networking,36,18.7
+IT Mgmt & Consulting,Excel,35,18.1
+IT Mgmt & Consulting,Storytelling / Presentasi,29,15.0
+IT Mgmt & Consulting,API / Integrasi,18,9.3
+IT Mgmt & Consulting,ETL / Data Pipeline,14,7.3
+IT Support,Networking,21,37.5
+IT Support,Linux,9,16.1
+IT Support,Storytelling / Presentasi,7,12.5
+IT Support,JIRA / Agile,7,12.5
+IT Support,SQL,4,7.1
+IT Support,Excel,4,7.1
+IT Support,ERP / SAP,4,7.1
+IT Support,PHP / Laravel,3,5.4
+Infra & Network,Cloud (AWS/GCP/Azure),69,54.3
+Infra & Network,Networking,67,52.8
+Infra & Network,Docker / K8s,61,48.0
+Infra & Network,CI/CD,54,42.5
+Infra & Network,Linux,52,40.9
+Infra & Network,Python,48,37.8
+Infra & Network,SQL,30,23.6
+Infra & Network,Git,30,23.6
+Security,Networking,35,54.7
+Security,Python,26,40.6
+Security,Cloud (AWS/GCP/Azure),23,35.9
+Security,Linux,20,31.3
+Security,Docker / K8s,15,23.4
+Security,API / Integrasi,12,18.8
+Security,CI/CD,9,14.1
+Security,JIRA / Agile,7,10.9
+Software Engineering,API / Integrasi,273,58.5
+Software Engineering,JavaScript/TypeScript,233,49.9
+Software Engineering,SQL,218,46.7
+Software Engineering,Git,189,40.5
+Software Engineering,JIRA / Agile,146,31.3
+Software Engineering,CI/CD,145,31.0
+Software Engineering,Testing / QA Tools,135,28.9
+Software Engineering,Java,133,28.5
